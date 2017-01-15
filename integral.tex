@@ -1,0 +1,127 @@
+\section{Integration}
+
+\subsection{Trapez}
+\begin{itemize}
+	\item Einfach \\
+	$T(f) = \frac{b-a}{2} (f(a) + f(b))$
+	
+	\item Zusammengesetzt \\
+	$T^{(n)}(f) = h (\frac{1}{2} f(x_0) + f(x_1) + \cdots + f(x_{n-1}) + \frac{1}{2} f(x_n))$
+\end{itemize}
+
+\subsection{Simpson}
+\begin{itemize}
+	\item Einfach \\
+	$S(f) = \frac{b-a}{6} (f(a) + 4 f(\frac{a+b}{2}) + f(b))$
+	
+	\item Zusammengesetzt \\
+	\begin{equation*}
+		S^{(n)}(f) = \frac{h}{6} \bigg(f(a) + 2 \sum_{k=1}^{n-1}(f(x_k)+f(x_n)) + 4 \sum_{k=1}^nf\big(\frac{x_{k-1}+x_k}{2}\big)\bigg)
+	\end{equation*}
+\end{itemize}
+
+\subsection{Newton-Cotes}
+\begin{itemize}
+
+	\item Allgemeine Formel \\
+	\begin{equation*}
+		P(f) = (b-a) \sum_{i=0}^n \alpha_i f(x_i)
+	\end{equation*}
+	
+	\item Tableau \\
+	\begin{displaymath}
+		\begin{array}{l | lllll | l}
+			n & a_i & & & & & name \\
+			\hline
+			1 & \frac{1}{2} & \frac{1}{2} & & & & Trapez \\
+			2 & \frac{1}{6} & \frac{4}{6} & \frac{1}{6} & & & Simpson \\
+			3 & \frac{1}{8} & \frac{3}{8} & \frac{3}{8} & \frac{1}{8} & & \frac{3}{8}-Regel \\
+			4 & \frac{7}{90} & \frac{32}{90} & \frac{12}{90} & \frac{32}{90} & \frac{7}{90} & Milne/Boole \\
+		\end{array}
+	\end{displaymath}
+	
+\end{itemize}
+
+\subsection{Gaus-Legendre Stützstellen}
+\begin{itemize}
+
+	\item Formeln \\
+	$x_k = \frac{b-a}{2} \widetilde{x}_k + \frac{b+a}{2}$ \\
+	$\alpha_k = \frac{b-a}{2} \widetilde{\alpha}_k$
+	
+	\item Werte für $\widetilde{x}_k$ \\
+	\begin{displaymath}
+		\begin{array}{l | llll}
+			n & \widetilde{x}_k \\
+			\hline
+			0 & 0 \\
+			1 & - \sqrt{\frac{1}{3}} & \sqrt{\frac{1}{3}} \\
+			2 & - \sqrt{\frac{3}{5}} & 0 & \sqrt{\frac{3}{5}} \\
+			3 & 
+				- \sqrt{\frac{3}{7} + \frac{2}{7}\sqrt{\frac{6}{5}}} & 
+				- \sqrt{\frac{3}{7} - \frac{2}{7}\sqrt{\frac{6}{5}}} & 
+				\sqrt{\frac{3}{7} - \frac{2}{7}\sqrt{\frac{6}{5}}} & 
+				\sqrt{\frac{3}{7} + \frac{2}{7}\sqrt{\frac{6}{5}}} \\
+		\end{array}
+	\end{displaymath}
+	
+	\item Werte für $\widetilde{\alpha}_k$ \\
+	\begin{displaymath}
+		\begin{array}{l | llll}
+			n & \widetilde{\alpha}_k \\
+			\hline
+			0 & 2 \\
+			1 & 1 & 1 \\
+			2 & \frac{5}{9} & \frac{8}{9} & \frac{5}{9} \\
+			3 & 
+				\frac{18 - \sqrt{30}}{36} & 
+				\frac{18 + \sqrt{30}}{36} & 
+				\frac{18 + \sqrt{30}}{36} & 
+				\frac{18 - \sqrt{30}}{36} \\
+		\end{array}
+	\end{displaymath}
+		
+\end{itemize}
+
+\subsection{Romberg}
+\begin{itemize}
+	
+	\item Allgemeine Formel \\
+	\begin{displaymath}
+		T_h^{(k)}(f) = \frac{2^{2k} T_{h/2}^{(k-1)}(f) - T_h^{k-1}}{2^{2k}-1}
+	\end{displaymath}
+	
+	\item Tableau \\
+	\begin{displaymath}
+		\begin{array}{l | llll}
+			h & T_h^{(0)}(f) \\
+			\frac{h}{2} & T_{h/2}^{(0)}(f) & T_{h}^{(1)}(f) \\
+			\frac{h}{4} & T_{h/4}^{(0)}(f) & T_{h/2}^{(1)}(f) & T_{h}^{(2)}(f)\\
+			\frac{h}{8} & T_{h/8}^{(0)}(f) & T_{h/4}^{(1)}(f) & T_{h/2}^{(2)}(f) & T_{h}^{(3)}(f) \\
+		\end{array}
+	\end{displaymath}
+	
+	\item Bedingung für Termination \\
+	\begin{equation*}
+		\frac{|T_{h}^{(k)}(f) - T_{h}^{(k-1)}(f)|}{|T_{h}^{(k)}(f)|} \leq TOL
+	\end{equation*}
+		
+\end{itemize}
+
+\subsection{Adaptiv}
+\begin{enumerate}
+	
+	\item Starte mit $I_0 = [a, b]$ und TOL: \\
+	$S_{[a,b]}^{(0)}(f)$ \\
+	$S_{[a,b]}^{(1)}(f) = S_{[a,\frac{a+b}{2}]}^{(0)}(f) + S_{[\frac{a+b}{2},b]}^{(0)}(f)$
+	
+	\item Wenn $|S_{[a,b]}^{(0)}(f) - S_{[a,b]}^{(1)}(f)| >$ TOL dann: \\
+	
+	\begin{enumerate}
+		
+		\item Halbiere Intervall I in $[a_1, b_1]$ und $[a_2, b_2]$	
+		
+		\item Wiederhole den Algorithmus für jedes Teilintervall
+		
+	\end{enumerate}
+\end{enumerate}
