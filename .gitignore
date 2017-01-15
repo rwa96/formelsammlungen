@@ -6,3 +6,5 @@
 *.snm
 *.gz
 *.toc
+*.tcp
+*.tks
