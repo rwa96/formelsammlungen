@@ -1,0 +1,111 @@
+\section{Iterative Verfahren}
+
+\subsection{Fixpunktiteration}
+\begin{itemize}
+
+	\item Gleichung umformen: $f(x) = 0 \Rightarrow x = g(x)$\\
+	\begin{equation*}
+		f(x) = 0 \Rightarrow x = x \alpha f(x)
+	\end{equation*}
+	
+	\item Konvergent wenn: $\frac{\delta g}{\delta x} < 1$ für gegebenen Punkt\\
+
+\end{itemize}
+
+\subsection{Newtonverfahren}
+\begin{itemize}
+
+	\item Allgemeines Verfahren
+	\begin{equation*}
+		x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}
+	\end{equation*}
+	
+	\item Als Fixpunkt
+	\begin{equation*}
+		g(x) = x - \frac{f(x)}{f'(x)}
+	\end{equation*}
+	
+	\item Quadratische Näherung, nicht nur linear
+	\begin{equation*}
+		x_{i+1} = x_i - m \frac{f(x_i)}{f'(x_i)}
+	\end{equation*}
+	\textit{m ist Position der gesuchten Nullstelle}
+
+\end{itemize}
+
+\subsection{Sekantenverfahren}
+\begin{itemize}
+
+	\item Allgemeine Verfahren
+	\begin{equation*}
+		x_{i+1} = x_i - \frac{x_i - x_{i-1}}{f(x_i) - f(x_{i-1}} f(x_i)
+	\end{equation*}
+	
+	\item Konvergiert nur linear
+
+\end{itemize}
+
+\subsection{Mehrdimensional}
+\subsubsection*{Eine Gleichung}
+\begin{enumerate}
+
+	\item Gradient
+	\begin{displaymath}
+		\nabla f(\vec{x}) =
+		\begin{pmatrix}
+			\frac{\delta f}{\delta x_1} \\
+			\frac{\delta f}{\delta x_2} \\
+			\vdots
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Jacobi-Matrix $J_g$
+	\begin{displaymath}
+		J_g(\vec{x}) =
+		\begin{pmatrix}
+			\frac{\delta \nabla f_1}{\delta x_1}  & \frac{\delta \nabla f_1}{\delta x_2} & \cdots \\[5pt]
+			\frac{\delta \nabla f_2}{\delta x_1}  & \frac{\delta \nabla f_2}{\delta x_2} & \cdots \\
+			\vdots & \vdots & \vdots
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Iteration
+	\begin{displaymath}
+		\vec{x}_{i+1} = \vec{x}_i - J_g^{-1}(\vec{x}_i) \cdot \nabla f(\vec{x}_i)
+	\end{displaymath}
+
+\end{enumerate}
+
+\subsubsection*{GLS}
+\begin{enumerate}
+
+	\item Alle Gleichungen nach 0 auflösen
+	\begin{displaymath}
+		g(\vec{x}) =
+		\begin{pmatrix}
+			g_1(\vec{x}) \\
+			g_2(\vec{x}) \\
+			\vdots
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Jacobi-Matrix $J_g$
+	\begin{displaymath}
+		J_g(\vec{x}) =
+		\begin{pmatrix}
+			\frac{\delta \nabla g_1}{\delta x_1}  & \frac{\delta \nabla g_1}{\delta x_2} & \cdots \\[5pt]
+			\frac{\delta \nabla g_2}{\delta x_1}  & \frac{\delta \nabla g_2}{\delta x_2} & \cdots \\
+			\vdots & \vdots & \vdots
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Iteration
+	\begin{displaymath}
+		\vec{x}_{i+1} = \vec{x}_i - J_g^{-1}(\vec{x}_i) \cdot g(\vec{x}_i)
+	\end{displaymath}
+
+\end{enumerate}
+
+
+
+

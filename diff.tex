@@ -40,19 +40,24 @@
 \end{itemize}
 
 \subsection{Absoluter Fehler}
-$\epsilon_f = $\textit{maximaler Rundungsfehler}
+\begin{itemize}
+	\item $\epsilon_f = $ \textit{maximaler Rundungsfehler} \\
+	\item $M = $ \textit{Maximum 2ter Ableitung} \\
+\end{itemize}
+
 \begin{equation*}
 	|e(h)| \leq \frac{h}{2} M + \frac{2\epsilon_f}{h}
 \end{equation*}
 
 \subsection{Optimales h}
 \begin{equation*}
-	h_{opt} \approx 2 \sqrt{\frac{|f(x_0)| \epsilon_{mach}}{M}}
+	h_{opt} \approx 2 \sqrt{\frac{|f(x_0)| \epsilon_f}{M}}
 \end{equation*}
 
 \subsection{Ordnung des Fehlers}
 \begin{displaymath}
 	\begin{array}{| c | c | c |}
+		Formel & e_v(h) & e_R(h) \\
 		\hline
 		f'(x_0) \approx \frac{f(x_0 + h) - f(x_0)}{h} & h \frac{f^{(2)}(z)}{2} & \frac{2\epsilon_f}{h} \\
 		f'(x_0) \approx \frac{f(x_0 + h) - f(x_0 - h)}{2h} & h^2 \frac{f^{(3)}(z)}{6} & \frac{\epsilon_f}{h} \\
