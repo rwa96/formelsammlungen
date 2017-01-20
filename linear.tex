@@ -1,3 +1,124 @@
 \section{Lineare Gleichungssysteme}
 
 \subsection{QR-Zerlegung: Householder}
+
+\subsubsection*{Eigenschaften der Q-Matrix}
+\begin{itemize}
+
+	\item $Q^{-1} = Q^T$
+	
+	\item $||Q||_2 = 1$
+	
+	\item $Q^TQ = QQ^T = I$
+	
+	\item für jede reguläre Matrix existiert eine QR-Zerlegung
+	\begin{itemize}
+	
+		\item A ist regulär wenn es eine inverse gibt
+		
+		\item regulär wenn rank(A) = n	
+	
+	\end{itemize}
+
+\end{itemize}
+
+\subsubsection*{Verfahren}
+\begin{equation*}
+	A = Q R \Rightarrow R \cdot \vec{x} = Q^T \cdot \vec{b}
+\end{equation*}
+Berechnung von $Q^T \cdot \vec{b}$ und R
+\begin{displaymath}
+	A =
+	\begin{pmatrix}
+		\vec{a}_1 & \vec{a}_2 & \cdots
+	\end{pmatrix}
+\end{displaymath}
+\begin{enumerate}
+
+	\item Householdervektor
+	\begin{displaymath}
+		\vec{v}_1 = \vec{a}_1 + sign(\vec{a}_{11}) \cdot ||\vec{a}_1||_2 \cdot
+		\begin{pmatrix}
+			1 \\ 0 \\ \vdots \\ 0
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Spiegelung
+	\begin{equation*}
+		Q_1a_i = a_i - \frac{2}{v_1^Tv_1}v_1(v_1^T a_i)
+	\end{equation*}
+	\begin{equation*}
+		Q_1b = b - \frac{2}{v_1^Tv_1}v_1(v_1^T b)
+	\end{equation*}
+	
+	\item Iteration
+	\begin{displaymath}
+		A_2 = Q_2 =
+		\begin{pmatrix}
+			Q_1a_1 & Q_1a_2 & \cdots & Q_1a_n
+		\end{pmatrix}
+	\end{displaymath}
+	\begin{displaymath}
+		Q_2 =
+		\begin{pmatrix}
+			1 & 0 & \cdots \\
+			0 & \widetilde{Q}_2 & \\
+			\vdots & & \\
+		\end{pmatrix}
+	\end{displaymath}
+	\begin{displaymath}
+		\vec{b}_2 =
+		\begin{pmatrix}
+			1 \\
+			\widetilde{b}_2 \\
+			\vdots \\
+		\end{pmatrix}
+	\end{displaymath}
+	
+	\item Verwende $\widetilde{Q}_2$ und $\widetilde{b}_2$ und wiederhole schritte
+	\begin{equation*}
+		\vec{a}_i := Q_1\widetilde{a}_{i+1}
+	\end{equation*}
+	\begin{equation*}
+		\vec{b}_i := Q_1\widetilde{b}_{i+1}
+	\end{equation*}
+	
+	\item Zusammensetzen
+	\begin{displaymath}
+		R =
+		\begin{pmatrix}
+			Q_1 & & \\
+			& \widetilde{Q}_2 & \\
+			& & \ddots
+		\end{pmatrix}
+	\end{displaymath}
+	\begin{displaymath}
+		Q^T \vec{b} =
+		\begin{pmatrix}
+			b_1 \\
+			\widetilde{b}_2 \\
+			\vdots
+		\end{pmatrix}
+	\end{displaymath}
+
+\end{enumerate}
+
+\subsection{Lineare Ausgleichsrechnung: Householder}
+\begin{itemize}
+	
+	\item Approximierende Funktion: $f(x) = \alpha_1 + \alpha_2 \cdot x$ \\
+	
+	\item Ausgleichsproblem: $A\alpha = f(\vec{x}) \Rightarrow R\alpha = Q^T \cdot f(\vec{x})$
+	
+	\item Wende Householder auf Ausgleichsproblem an
+	
+	\item Residuum (Näherungsfehler)
+	\begin{displaymath}
+		Q^T\vec{b} = 
+		\begin{pmatrix}
+			\vdots \\
+			res
+		\end{pmatrix}
+	\end{displaymath}
+
+\end{itemize}
