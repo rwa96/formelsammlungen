@@ -1,5 +1,35 @@
 \section{Lineare Gleichungssysteme}
 
+\subsection{LU-Zerlegung}
+
+\subsubsection*{Kompakte Schreibweise}
+\begin{displaymath}
+	LU = 
+	\begin{pmatrix}
+		u & u & u & u \\
+		l & u & u & u \\
+		l & l & u & u \\
+		l & l & l & u
+	\end{pmatrix}
+\end{displaymath}
+
+\subsubsection*{Bessere Kondition}
+\begin{itemize}
+
+	\item Vertausche in jeder Spaltenrechnung, so dass der Pivot am größten ist (Permutationsvector p)
+	
+	\item Für jeden Schritt (m = Zeilenindex):
+		\begin{displaymath}
+			\vec{p} =
+			\begin{pmatrix}
+				\widetilde{m} \\
+				\vdots \\
+				\widetilde{m}
+			\end{pmatrix}
+		\end{displaymath}
+
+\end{itemize}
+
 \subsection{QR-Zerlegung: Householder}
 
 \subsubsection*{Eigenschaften der Q-Matrix}
@@ -19,7 +49,7 @@
 		\item regulär wenn rank(A) = n	
 	
 	\end{itemize}
-
+	
 \end{itemize}
 
 \subsubsection*{Verfahren}
@@ -103,22 +133,27 @@ Berechnung von $Q^T \cdot \vec{b}$ und R
 
 \end{enumerate}
 
-\subsection{Lineare Ausgleichsrechnung: Householder}
+\subsection{Cholesky-Zerlegung}
+
+\subsubsection*{Positiv definit}
 \begin{itemize}
 	
-	\item Approximierende Funktion: $f(x) = \alpha_1 + \alpha_2 \cdot x$ \\
+	\item Alle Eigenwerte sind positiv
 	
-	\item Ausgleichsproblem: $A\alpha = f(\vec{x}) \Rightarrow R\alpha = Q^T \cdot f(\vec{x})$
+	\item LU-Zerlegung ohne Vertauschungen $\Rightarrow$ positive U-Diagonale
 	
-	\item Wende Householder auf Ausgleichsproblem an
-	
-	\item Residuum (Näherungsfehler)
-	\begin{displaymath}
-		Q^T\vec{b} = 
-		\begin{pmatrix}
-			\vdots \\
-			res
-		\end{pmatrix}
-	\end{displaymath}
-
 \end{itemize}
+
+\subsubsection*{Verfahren}
+Allgemeine Formel: $A = L \cdot L^T$ \\
+Verwendung: $Ax = b \Rightarrow Ly = b \Rightarrow L^Tx = y$
+
+\begin{displaymath}
+	l_{ij} =
+	\begin{cases}
+		0 & \text{für } i<j \\
+		\sqrt{a_{ii} - \sum_{k=0}^{i-1}l_{ik}^2} & \text{für } i=j \\
+		\frac{1}{l_{ij}} (a_{ij} - \sum_{k=0}^{j-1}l_{ik}l_{jk}) & \text{für } i>j \\
+	\end{cases}
+\end{displaymath}
+
