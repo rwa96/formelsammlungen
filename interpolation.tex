@@ -8,9 +8,13 @@
 	\begin{equation*}
 		p(x) = c_{0} + c_{1}x + c_{2}x^2 + c_{n-1}x^{n-1}
 	\end{equation*}
+	\begin{equation*}
+		A\vec{x} = \vec{y}
+	\end{equation*}
 	
 	\item Lösungsmatrix \\
 	\begin{displaymath}
+		A = 
 		\begin{pmatrix}
 			1 		& x_{1} 	& x_{1}^2 	& \cdots	& x_{1}^{n-1} 	\\
 			\vdots	& \vdots	& \vdots	& \vdots	&\vdots			\\
@@ -67,7 +71,7 @@
 		\end{array}
 	\end{displaymath}
 	\begin{displaymath}
-		y_{k\cdots l} = \frac{y_{k\cdots (l+1)} - y_{(k-1}\cdots l}{x_k - x_l}
+		y_{k\cdots l} = \frac{y_{k\cdots (l+1)} - y_{(k-1)\cdots l}}{x_k - x_l}
 		\implies
 		y_{321} = \frac{y_{32} - y_{21}}{x_3 - x_1}
 	\end{displaymath}

@@ -1,9 +1,38 @@
 \section{Lineare Ausgleichsrechnung}
 
-\subsection{Mit Householder}
+\subsection{Normalengleichung}
+\subsubsection*{Allgemeine Formel}
+\begin{itemize}
+
+	\item $f(x) = \alpha_1f_1(x) + \cdots + \alpha_nf_n(x)$
+	
+	\item Ausgleichsproblem
+	\begin{displaymath}
+		A = 
+		\begin{pmatrix}
+			f_1(x_1) & \cdots & f_n(x_1) \\
+			\vdots & \ddots & \vdots \\
+			f_1(x_m) & \cdots & f_n(x_m)
+		\end{pmatrix}
+		, \alpha =
+		\begin{pmatrix}
+			\alpha_1 \\ \vdots \\ \alpha_n
+		\end{pmatrix}
+		, b = 
+		\begin{pmatrix}
+			b_1 \\ \vdots \\ b_m
+		\end{pmatrix}
+	\end{displaymath}
+	\begin{equation*}
+		A^TA\alpha = A^Tb
+	\end{equation*}
+
+\end{itemize}
+
+\subsection{Householder}
 \begin{itemize}
 	
-	\item Approximierende Funktion: $f(x) = \alpha_1 + \alpha_2 \cdot x$ \\
+	\item Approximierende Funktion: $f(x) = \alpha_1 + \alpha_2 \cdot x$
 	
 	\item Ausgleichsproblem: $A\alpha = f(\vec{x}) \Rightarrow R\alpha = Q^T \cdot f(\vec{x})$
 	

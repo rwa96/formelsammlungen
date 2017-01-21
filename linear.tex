@@ -1,5 +1,58 @@
 \section{Lineare Gleichungssysteme}
 
+\subsection{Rechenaufwand}
+\begin{itemize}
+	\item $v^T \cdot w \Rightarrow O(n)$
+	\item $A \cdot v \Rightarrow O(n^2)$
+	\item $A \cdot B \Rightarrow O(n^3)$
+	\item $Ax = b \Rightarrow O(n^3)$
+\end{itemize}
+
+\subsection{Normen}
+
+\subsubsection*{Vektornorm}
+\begin{enumerate}
+
+	\item Summennorm $||x||_1 = \sum_{i=1}^n|x_i|$
+	
+	\item Euklidsche Norm $||x||_2 = \sqrt{\sum_{i=1}^nx_i^2}$
+	
+	\item Maximumnorm $||x||_\infty = max(x)_{i=1\cdots n} |x_i|$
+
+\end{enumerate}
+
+\subsubsection*{Matrixnorm}
+Maß für maximale Streckung eines Vektors
+\begin{enumerate}
+
+	\item Spaltensummennorm $||A||_1 = max(x)_{j=1\cdots n}\sum_{i=1}^n|a_{ij}|$
+	
+	\item Euklidsche Norm $||A||_2 = \sqrt{\lambda_{max}(A^TA)}$
+	
+	\item Zeilensummennorm $||A||_\infty = max(x)_{i=1\cdots n}\sum_{j=1}^n|a_{ij}|$
+
+\end{enumerate}
+
+\subsection{Fehler}
+\begin{itemize}
+
+	\item Absoluter Fehler
+	\begin{equation*}
+		||\bigtriangleup x|| \leq ||A^{-1}|| \cdot ||\bigtriangleup b||
+	\end{equation*}
+	
+	\item Relativer Fehler
+	\begin{equation*}
+		\frac{||\bigtriangleup x||}{||x||} \leq (||A^{-1}|| \cdot ||A||) \cdot \frac{||\bigtriangleup b||}{||b||}
+	\end{equation*}
+	
+	\item Kondition
+	\begin{equation*}
+		\kappa(A) = ||A^{-1}|| \cdot ||A||
+	\end{equation*}
+
+\end{itemize}
+
 \subsection{LU-Zerlegung}
 
 \subsubsection*{Kompakte Schreibweise}

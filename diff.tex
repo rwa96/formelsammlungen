@@ -19,8 +19,8 @@
 
 	\item Taylorreihe \\
 	\begin{equation*}
-		T(f(x)) = \sum_{n=0}^{\infty}\frac{f^{(n)}(x_0)}{n!} (x - x_0)^n 
-		= f(x_0) + f^{(1)}(x_0)(x - x_0) + \frac{f^{(2)}(x_0)}{2} (x - x_0)^2 + \cdots
+		T(f(x)) = \sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!} (x - a)^n 
+		= f(a) + f^{(1)}(a)(x - a) + \frac{f^{(2)}(a)}{2} (x - a)^2 + \cdots
 	\end{equation*}
 	
 	\item In Formel Einsetzen \\
@@ -63,6 +63,5 @@
 		f'(x_0) \approx \frac{f(x_0 + h) - f(x_0 - h)}{2h} & h^2 \frac{f^{(3)}(z)}{6} & \frac{\epsilon_f}{h} \\
 		f'(x_0) \approx \frac{-3f(x_0) + 4f(x_0 + h) - f(x_0 + 2h)}{2h} & h^2 \frac{f^{(3)}(z)}{3} & \frac{4\epsilon_f}{h} \\
 		f'(x_0) \approx \frac{-f(x_0 + 2h) + 8f(x_0+h) -8f(x_0-h) + f(x_0-2h)}{12h} & h^4 \frac{f^{(5)}(z)}{30} & \frac{3\epsilon_f}{2h} \\
-		\hline
 	\end{array}
 \end{displaymath}
