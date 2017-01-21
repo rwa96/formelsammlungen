@@ -1,0 +1,77 @@
+\section{Fehler}
+
+\subsection{Kategorien}
+\begin{itemize}
+
+	\item Modellfehler (Vereinfachungen)
+	
+	\item Eingabefehler (ungenaue Daten oder vorherige Berechnungen)
+	
+	\item Verfahrensfehler (näherungsweise Berechnung, z.B. Linearisierung)
+	
+	\item Rundungsfehler (Maschienenzahlen)
+
+\end{itemize}
+
+\subsection{Maschienenzahlen}
+
+\subsubsection*{Aufbau}
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{pics/floatingpoint}
+	\caption{32bit Fließkomma (single)}
+\end{figure}
+
+\subsubsection*{Standartgrößen}
+\begin{itemize}
+
+	\item Single: 32Bit \\
+	VZ = 1Bit, EXP = 8Bit, MAN = 23Bit
+	
+	\item Double: 64Bit \\
+	VZ = 1Bit, EXP = 11Bit, MAN = 52Bit
+
+\end{itemize}
+
+\subsubsection*{Berechnung}
+\begin{itemize}
+
+	\item Dezimal zu Binär \\
+	Für die Dezimalzahl \textbf{x} wiederhole:
+	\begin{itemize}
+		\item $\widetilde{x} := 2 \cdot x$
+		\item $b_i = \widetilde{x}\text{ div }1$
+		\item $x := \widetilde{x}\text{ mod }1$
+	\end{itemize}
+	Ergebnis: $0.b_1b_2...b_n$
+	
+	\item Normalisierung $M = \pm 1.m \cdot 2^E$ \\
+	
+	\item Exponent $E = e - (|EXP|-1)$ \\
+
+\end{itemize}
+
+\subsubsection*{Rundungsfehler}
+\begin{itemize}
+
+	\item Auslöschung \\
+	Subtraktion gleichgroßer Zahlen $\Rightarrow$ Ergebnis wird durch 0ller aufgefüllt
+	
+	\item Angleichung \\
+	Addition oder Subtraktion, betragsmäßig sehr unterschiedlicher Zahlen
+
+\end{itemize}
+
+\subsection{Formeln}
+\begin{itemize}
+
+	\item Absoluter Fehler: $\bigtriangleup x = |x - \widetilde{x}|$
+	
+	\item Relativer Fehler: $rel = \frac{\bigtriangleup x}{|x|}$
+	
+	\item Maschinengenauigkeit: $\epsilon = 2^{-n}$
+	
+	\item Kondition (Verstärkung von Eingabefehlern zu Ausgabefehlern) \\
+	$\kappa = \bigg|\frac{f'(x)}{f(x)} \cdot x\bigg|$\\
+	(schlechte Kondition wenn $\kappa \gg 1$) 
+
+\end{itemize}
