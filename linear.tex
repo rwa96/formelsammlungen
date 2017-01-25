@@ -53,6 +53,14 @@ Maß für maximale Streckung eines Vektors
 
 \end{itemize}
 
+\subsubsection*{Eigenschaften: Kondition}
+\begin{itemize}
+	\item $\kappa(A) \geq 1$
+	\item $\kappa(I) = 1$
+	\item $\kappa(\lambda A) = \kappa(A)$
+	\item singulär: $\kappa(A) = \infty$
+\end{itemize}
+
 \subsection{LU-Zerlegung}
 
 \subsubsection*{Kompakte Schreibweise}
@@ -105,6 +113,7 @@ Maß für maximale Streckung eines Vektors
 	
 \end{itemize}
 
+\pagebreak
 \subsubsection*{Verfahren}
 \begin{equation*}
 	A = Q R \Rightarrow R \cdot \vec{x} = Q^T \cdot \vec{b}
@@ -209,4 +218,20 @@ Verwendung: $Ax = b \Rightarrow Ly = b \Rightarrow L^Tx = y$
 		\frac{1}{l_{ij}} (a_{ij} - \sum_{k=0}^{j-1}l_{ik}l_{jk}) & \text{für } i>j \\
 	\end{cases}
 \end{displaymath}
+
+\subsubsection*{Aufwand}
+\begin{tabular}{l | l | l | l}
+
+	& LU & Cholesky & QR \\
+	\hline
+	Aufwand $O(n^3)$ & gute Konstante & schlechte Konstante & Schlechteste \\
+	Stabilität & schlecht & gut & gut \\
+	Bedingung & Regulär & Positiv definit & Regulär \\
+
+\end{tabular}
+\begin{itemize}
+
+	\item Rechenaufwand: 
+
+\end{itemize}
 

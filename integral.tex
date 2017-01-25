@@ -7,6 +7,10 @@
 	
 	\item Zusammengesetzt \\
 	$T^{(n)}(f) = h (\frac{1}{2} f(x_0) + f(x_1) + \cdots + f(x_{n-1}) + \frac{1}{2} f(x_n))$
+	
+	\item Fehler \\
+	$\bigg|\int_a^b (f(x)-p(x)) dx \bigg| \leq \frac{M_2(b-a)^3}{12}$
+	
 \end{itemize}
 
 \subsection{Simpson}
@@ -18,6 +22,9 @@
 	\begin{equation*}
 		S^{(n)}(f) = \frac{h}{6} \bigg(f(a) + 2 \sum_{k=1}^{n-1}(f(x_k)+f(x_n)) + 4 \sum_{k=1}^nf\big(\frac{x_{k-1}+x_k}{2}\big)\bigg)
 	\end{equation*}
+	
+	\item Fehler \\
+	$e_v = \bigg|\int_a^b (f(x)-p(x)) dx \bigg| \leq \frac{M_4(b-a)^5}{2880}$
 \end{itemize}
 
 \subsection{Newton-Cotes}

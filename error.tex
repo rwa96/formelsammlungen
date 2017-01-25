@@ -25,10 +25,10 @@
 \begin{itemize}
 
 	\item Single: 32Bit \\
-	VZ = 1Bit, EXP = 8Bit, MAN = 23Bit
+	VZ = 1Bit, EXP = 8Bit, MAN = 23Bit, B = 127
 	
 	\item Double: 64Bit \\
-	VZ = 1Bit, EXP = 11Bit, MAN = 52Bit
+	VZ = 1Bit, EXP = 11Bit, MAN = 52Bit, B = 1023
 
 \end{itemize}
 
@@ -44,9 +44,9 @@
 	\end{itemize}
 	Ergebnis: $0.b_1b_2...b_n$
 	
-	\item Normalisierung $M = \pm 1.m \cdot 2^E$ \\
+	\item Normalisierung $M = (0:=+, 1:=-) 1.m \cdot 2^E$ \\
 	
-	\item Exponent $E = e - (|EXP|-1)$ \\
+	\item Exponent $e = E - B$ \\
 
 \end{itemize}
 
@@ -72,6 +72,6 @@
 	
 	\item Kondition (Verstärkung von Eingabefehlern zu Ausgabefehlern) \\
 	$\kappa = \bigg|\frac{f'(x)}{f(x)} \cdot x\bigg|$\\
-	(schlechte Kondition wenn $\kappa \gg 1$) 
+	(schlechte Kondition wenn $\kappa \gg 1$)
 
 \end{itemize}
