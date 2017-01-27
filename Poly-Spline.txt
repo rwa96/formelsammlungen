@@ -1,6 +1,0 @@
-Nachteile Polynominterpolation: 
-
-- Interpolationsaufgabe höherer Ordnung sehr schlecht konditioniert
-- Große Interpolations fehler in den Randbereichen
-- Polynome hoher Ordnung sehr stark oszillieren
-- Stückweise Interpolation oft nicht differenzierbar

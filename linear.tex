@@ -219,19 +219,30 @@ Verwendung: $Ax = b \Rightarrow Ly = b \Rightarrow L^Tx = y$
 	\end{cases}
 \end{displaymath}
 
-\subsubsection*{Aufwand}
-\begin{tabular}{l | l | l | l}
-
-	& LU & Cholesky & QR \\
-	\hline
-	Aufwand $O(n^3)$ & gute Konstante & schlechte Konstante & Schlechteste \\
-	Stabilität & schlecht & gut & gut \\
-	Bedingung & Regulär & Positiv definit & Regulär \\
-
-\end{tabular}
+\subsubsection*{Vergleich: LU, QR, Cholesky}
 \begin{itemize}
 
-	\item Rechenaufwand: 
+	\item LU
+	\begin{itemize}
+		\item Rechenaufwand: $(O(n^3))$
+		\item Sehr schlechte Kondition bei fast Singulären Matrizen
+		\item Bei fast Singularität durch Rundungsfehler nicht mehr eindeutig lösbar.
+	\end{itemize}
+	
+	\item QR
+	\begin{itemize}
+		\item Rechenaufwand: doppelt so groß wie der der LU Zerlegung
+		\item Numerisch Stabil 
+	\end{itemize}
+	
+	\item Cholesky
+	\begin{itemize}
+		\item Geringster Rechenaufwand: halb so groß wie der der LU zerlegung 
+		\item Kondition verschlechtert sich nicht
+		\item Matrizen sind nie singulär
+		\item Keine Pivot-Suche nötig für numerische Stabilität
+		\item Nur bei Positiv Definiten Matrizen möglich
+	\end{itemize}
 
 \end{itemize}
 
