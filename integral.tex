@@ -10,6 +10,8 @@
 	
 	\item Fehler \\
 	$\bigg|\int_a^b (f(x)-p(x)) dx \bigg| \leq \frac{M_2(b-a)^3}{12}$
+
+	\item $M_{(n)} = max_{[a,b]}|f^{(n)}(x)|$
 	
 \end{itemize}
 
@@ -145,4 +147,14 @@
 		\item Wiederhole den Algorithmus für jedes Teilintervall
 		
 	\end{enumerate}
+	
+	\item Fehler
+	\begin{equation*}
+		E_h(f)= I(f) - S_h(f) \approx \frac{2^q}{2^q-1}(S_{h/2}(f)-S_h(f))
+	\end{equation*}
+	\begin{itemize}
+		\item Simpson: $q = 4$
+		\item Trapez: $q = 2$
+	\end{itemize}
+	
 \end{enumerate}
