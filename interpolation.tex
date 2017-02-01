@@ -103,12 +103,16 @@
 		\item $A\vec{c}=\vec{r} \implies c_i$
 		\begin{displaymath}
 			\begin{pmatrix}
-				h_0		& 2(h_0 + h_1)	& h_1	& 0 		& \cdots	& 0 \\
-				0		& h_1	& 2(h_1 + h_2)	& h_2		& \cdots	& \vdots \\
-				\vdots	& \vdots	& \vdots	& \vdots	& \vdots	& \vdots \\
-				0		& \cdots	& \cdots	& h_{n-2}	& 2(h_{n-2} + h_{n-1})	& h_{n-1} \\
+				2(h_0 + h_1)	& h_1	& 0 	& \cdots \\
+				h_1	& 2(h_1 + h_2)	& h_2		& \cdots \\
+				\vdots	& \ddots	& \ddots	& \vdots \\
+				\cdots	& \cdots	& h_{n-2}	& 2(h_{n-2} + h_{n-1}) \\
 			\end{pmatrix}
-			\vec{c} = 
+			\cdot 
+			\begin{pmatrix}
+				c_1 \\ c_2 \\ \vdots \\ c_{n-1}
+			\end{pmatrix}						
+			= 
 			\begin{pmatrix}
 				3\frac{y_2-y_1}{h_1} - 3\frac{y_1-y_0}{h_0} \\
 				3\frac{y_3-y_2}{h_2} - 3\frac{y_2-y_1}{h_1} \\
@@ -116,14 +120,17 @@
 				3\frac{y_n-y_{n-1}}{h_{n-1}} - 3\frac{y_{n-1}-y_{n-2}}{h_{n-2}} \\
 			\end{pmatrix}
 		\end{displaymath}
-		A = $(n-1) x (n+1)$
+		$dim(A) = (n-2) \times (n-2)$ wobei n der Anzahl der Eingabewerte entspricht.
 		\item $b_i = \frac{y_{i+1} - y_i}{h_i} - \frac{h_i}{3} (c_{i+1} + 2c_i)$
 		\item $d_i = \frac{c_{i+1} - c_i}{3 h_i}$
 	\end{enumerate}
 	
-	\item Desweiteren gilt \\
-		$2 c_i + 6 d_i h_i = 2 c_{i+1}$ \\
-		$b_i + 2 c_i h_i + 3 d_i h_i^2 = b_{i+1}$
+	\item Aus den Ableitungen
+	\begin{itemize}
+		\item $y_i + b_i h_i + c_i h_i^2 + d_i h_i^3 = y_{i+1}$
+		\item $b_i + 2 c_i h_i + 3 d_i h_i^2 = b_{i+1}$
+		\item $2 c_i + 6 d_i h_i = 2 c_{i+1}$
+	\end{itemize}
 	
 	\item Natürliche Splines (Erste und letzte Spalte von A fallen weg)
 	(Spline ist eine Gerade außerhalb des Intervalls) \\
@@ -131,15 +138,19 @@
 	
 	\item Not-a-knot Splines (Erste u. letzte Spalte von A fallen weg)
 	(Stetigkeit der 3. Ableitung für $x_1$ und $x_{n-1}$) \\
-	$6d_0 = 6d_1 \wedge 6d_{n-2} = 6d_{n-1}$ 
+	$d_0 = d_1 \wedge d_{n-2} = d_{n-1}$ 
+	\begin{equation*}
+		c_0 = \frac{(h_0 + h_1)c_1 - h_0 c_2}{h_1}
+	\end{equation*}
+	\begin{equation*}
+		c_n = \frac{(h_{n-2} + h_{n-1})c_{n-1} - h_{n-1} c_{n-2}}{h_{n-2}}
+	\end{equation*}
+	Außerdem Anpassung des r-Vektors
 	\begin{displaymath}
-		\implies \vec{r} =
 		\begin{pmatrix}
-			\frac{h_1}{h_0 + h_1} r_1 \\
-			r_2 \\
+			\frac{h_1}{h_0 + h_1} \cdot r_1 \\
 			\vdots \\
-			r_{n-2} \\
-			\frac{h_{n-2}}{h_{n-2}+h_{n-1}} r_{n-1} \\
+			\frac{h_{n-2}}{h_{n-2} + h_{n-1}} \cdot r_{n-1}
 		\end{pmatrix}
 	\end{displaymath}
 	
