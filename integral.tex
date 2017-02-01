@@ -18,11 +18,11 @@
 \subsection{Simpson}
 \begin{itemize}
 	\item Einfach \\
-	$S(f) = \frac{b-a}{6} (f(a) + 4 f(\frac{a+b}{2}) + f(b))$
+	$S(f) = \frac{h}{6} (f(x_0) + 4 f(\frac{x_0+x_1}{2}) + f(x_1))$
 	
 	\item Zusammengesetzt \\
 	\begin{equation*}
-		S^{(n)}(f) = \frac{h}{6} \bigg(f(a) + 2 \sum_{k=1}^{n-1}(f(x_k)+f(x_n)) + 4 \sum_{k=1}^nf\big(\frac{x_{k-1}+x_k}{2}\big)\bigg)
+		S^{(n)}(f) = \frac{h}{6} \bigg(f(x_0) + 2 \sum_{k=1}^{n-1}f(x_k) + 4 \sum_{k=1}^nf\big(\frac{x_{k-1}+x_k}{2} \big) + f(x_n) \bigg)
 	\end{equation*}
 	
 	\item Fehler \\
@@ -138,7 +138,7 @@
 		\item $S_{[a,b]}^{(1)}(f) = S_{[a,\frac{a+b}{2}]}^{(0)}(f) + S_{[\frac{a+b}{2},b]}^{(0)}(f)$
 	\end{itemize}
 	
-	\item Wenn $|S_{[a,b]}^{(0)}(f) - S_{[a,b]}^{(1)}(f)| >$ TOL dann: \\
+	\item Wenn $|S_{[a,b]}^{(0)}(f) - S_{[a,b]}^{(1)}(f)| > (2^q-1)\cdot TOL$ dann: \\
 	
 	\begin{enumerate}
 		
