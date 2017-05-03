@@ -1,0 +1,22 @@
+\section{Abbildungen: $\mathbb{R}_n \rightarrow \mathbb{R}$}
+
+\subsection{Linearisierung}
+\begin{equation*}
+	f(x_1 + \delta x_1, x_2 + \delta x_2, \cdots x_n + \delta x_n) \approx f(x_1 \cdots x_n) + \frac{\delta f}{\delta x_1} \delta x_1 \cdots + \frac{\delta f}{\delta x_n} \delta x_n
+\end{equation*}
+
+\subsection{Fehlerrechnung}
+\begin{equation*}
+	e_{max} = \bigg | \frac{\delta f}{\delta x_1}(\bar{x_1} \cdots \bar{x_n}) \Delta x_1 \bigg | + \cdots + \bigg | \frac{\delta f}{\delta x_n}(\bar{x_1} \cdots \bar{x_n}) \Delta x_n \bigg |
+\end{equation*}
+($\Delta x_i$ ist die Messabweichung, $\bar{x_i}$ der Messwert)
+
+\subsection{Richtungsableitung}
+\begin{itemize}
+	\item Gradient:
+		$G(f) = \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
+	\item Richtungsableitung:
+		$f'_v(x_1, x_2, \cdots x_n) = \vec{v} \cdot \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
+\end{itemize}
+
+\subsection{Integration}
