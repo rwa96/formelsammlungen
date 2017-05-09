@@ -14,9 +14,18 @@
 \subsection{Richtungsableitung}
 \begin{itemize}
 	\item Gradient:
-		$G(f) = \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
+		$G_f = \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
 	\item Richtungsableitung:
 		$f'_v(x_1, x_2, \cdots x_n) = \vec{v} \cdot \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
+	\item Steigungsgerade:
+		$g(x_1, x_2, \cdots x_n) = P + \lambda G_f(P)$
+
+		\begin{itemize}
+			\item Richtung maximaler Steigung an einem Punkt P \\
+			$\vec{d} = G_f(P)$
+			\item Steigung in Richtung $\vec{d}$ \\ $m = |\vec{d}|$
+			\item Steigungswinkel \\ $\alpha = arctan(m)$
+		\end{itemize}
 \end{itemize}
 
 \subsection{Integration}
