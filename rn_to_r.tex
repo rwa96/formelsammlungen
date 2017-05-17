@@ -1,4 +1,4 @@
-\section{Abbildungen: $\mathbb{R}_n \rightarrow \mathbb{R}$}
+\section{Abbildungen: $\mathbb{R}^n \rightarrow \mathbb{R}$}
 
 \subsection{Linearisierung}
 \begin{equation*}
@@ -29,3 +29,27 @@
 \end{itemize}
 
 \subsection{Integration}
+\begin{itemize}
+	\item Doppelintegral (Funktionen mit mehreren Parametern) \\
+	$\int_B f(x, y) = \int_{a1}^{a2}(\int_{b1}^{b2} f(x, y) dy) dx$
+
+	\item Geschachtelte Funktionen \\
+	$\int_{B_{g(x)}} f(x, y) = \int_{a1}^{a2}(\int_0^{g(x)} f(x, y) dy) dx$
+
+	\item Allgemein gilt: \\
+	Sind $f_{x,y}$ und $f_{y,x}$ stetig, so ist $f_{x,y} = f_{y,x}$
+\end{itemize}
+
+\subsection{Extremwerte}
+\subsubsection{Rezept: Minimum/Maximum}
+\begin{enumerate}
+	\item $\frac{\delta}{\delta x}f(x_0,y_0) = 0 \wedge \frac{\delta}{\delta y}f(x_0,y_0) = 0$
+
+	\item $\Delta = \frac{\delta \delta}{\delta \delta x}f(x_0,y_0) \cdot \frac{\delta \delta}{\delta y \delta x}f(y_0,y_0) \cdot (\frac{\delta}{\delta x}f(x_0,x_0))^2$
+	\begin{itemize}
+		\item $\frac{\delta \delta}{\delta \delta x}f(x_0,y_0) < 0$ relatives Maximum
+		\item $\frac{\delta \delta}{\delta \delta x}f(x_0,y_0) > 0$ relatives Minimum
+		\item $\Delta < 0$ Sattelpunkt
+		\item $\Delta = 0$ nicht Entscheidbar
+	\end{itemize}
+\end{enumerate}
