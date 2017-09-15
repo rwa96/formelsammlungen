@@ -1,3 +1,3 @@
 # formelsammlungen
 
-A collection of formularies I used during my Computer Science Bachelor.
+A collection of formularies I use in my current studies.
