@@ -7,7 +7,7 @@ $f(t+\Delta t) \approx f(t) + \Delta t \cdot f'(t)$
 \begin{itemize}
 	\item Gleichung: \\
 	\begin{displaymath}
-		f(t) = 
+		f(t) =
 		\begin{pmatrix}
 			x(t) \\ y(t) \\ z(t)
 		\end{pmatrix}
@@ -53,13 +53,15 @@ $f(t+\Delta t) \approx f(t) + \Delta t \cdot f'(t)$
 		$L_{a,b} = \int_a^b (\sqrt{R^2 + v^2}\cdot \alpha ) d\alpha$
 		\item Bogenlänge Zykloide:
 		$L_{a,b} = \int_a^b (2 R\cdot sin(\frac{\varphi}{2})) d\varphi$
+		\item Bogenlänge bei Archimedische Spirale:
+		$L_{a,b} = \int_a^b \sqrt{r'(\varphi)^2 + r(\varphi)^2} d\varphi$
 	\end{itemize}
 \end{itemize}
 
 \subsection{Krümmung}
 \begin{itemize}
 	\item Normale Funktionen: $K(x) = \frac{f''(x)}{\sqrt{1+f'(x)^2}^3}$
-	\item Parametrisiert: 
+	\item Parametrisiert:
 	$K(t) = \frac
 		{\ddot{y} \dot{x} - \dot{y} \ddot{x}}
 		{\big ( \dot{x} \sqrt{1 + \frac{ \dot{y} }{ \dot{x} }^2} \big )^3}
@@ -75,11 +77,11 @@ $f(t+\Delta t) \approx f(t) + \Delta t \cdot f'(t)$
 \pagebreak
 
 \subsection{Linienintegrale}
-\subsubsection{Gegeben:}
+\subsubsection{1. Art:}
 \begin{itemize}
 	\item Parameterdarstellung $K: \mathbb{R} \rightarrow \mathbb{R}^n$
 	\item Funktion $F: \mathbb{R}^n \rightarrow \mathbb{R}$
 \end{itemize}
+$\Rightarrow \int_a^b F(K(t)) \cdot |K'(t)| dt$
 
-\subsubsection{Allgemeine Formel:}
-$\int_a^b F(K(t)) \cdot |K'(t)| dt$
+\subsubsection{2. Art:}

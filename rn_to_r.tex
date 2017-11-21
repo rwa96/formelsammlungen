@@ -16,7 +16,7 @@
 	\item Gradient:
 		$G_f = \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
 	\item Richtungsableitung:
-		$f'_v(x_1, x_2, \cdots x_n) = \vec{v} \cdot \big(\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, \cdots \frac{\delta f}{\delta x_n}\big )$
+		$f'_v(x_1, x_2, \cdots x_n) = \vec{v} \cdot G_f	$
 	\item Steigungsgerade:
 		$g(x_1, x_2, \cdots x_n) = P + \lambda G_f(P)$
 
@@ -34,7 +34,7 @@
 	$\int_B f(x, y) = \int_{a1}^{a2}(\int_{b1}^{b2} f(x, y) dy) dx$
 
 	\item Geschachtelte Funktionen \\
-	$\int_{B_{\big\arrowvert_{f(x)}^{g(x)}}} f(x, y) = \int_{a1}^{a2}(\int_{f(x)}^{g(x)} f(x, y) dy) dx$
+	$\int_{B_{\arrowvert_{f(x)}^{g(x)}}} f(x, y) = \int_{a1}^{a2}(\int_{f(x)}^{g(x)} f(x, y) dy) dx$
 
 	\item Allgemein gilt: \\
 	Sind $f_{x,y}$ und $f_{y,x}$ stetig, so ist $f_{x,y} = f_{y,x}$
@@ -43,9 +43,9 @@
 \subsection{Extremwerte}
 \subsubsection{Rezept: Minimum/Maximum}
 \begin{enumerate}
-	\item $\frac{\delta}{\delta x}f(x_0,y_0) = 0 \wedge \frac{\delta}{\delta y}f(x_0,y_0) = 0$
+	\item $\frac{\delta}{\delta x}f(x_0,y_0) = 0 \wedge \frac{\delta}{\delta y}f(x_0,y_0) = 0$ Extremwert
 
-	\item $\Delta = \frac{\delta \delta}{\delta \delta x}f(x_0,y_0) \cdot \frac{\delta \delta}{\delta y \delta x}f(y_0,y_0) \cdot (\frac{\delta}{\delta x}f(x_0,x_0))^2$
+	\item $\Delta = \frac{\delta \delta}{\delta \delta x}f(x_0,y_0) \cdot \frac{\delta \delta}{\delta \delta y}f(y_0,y_0) \cdot (\frac{\delta}{\delta x \delta y}f(x_0,x_0))^2$
 	\begin{itemize}
 		\item $\frac{\delta \delta}{\delta \delta x}f(x_0,y_0) < 0$ relatives Maximum
 		\item $\frac{\delta \delta}{\delta \delta x}f(x_0,y_0) > 0$ relatives Minimum
