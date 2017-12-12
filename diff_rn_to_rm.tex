@@ -66,3 +66,69 @@
     \item Ansatz: \textbf{Kettenregel} \\
     $(g \circ f)' = (g' \circ f) \cdot f'$
 \end{enumerate}
+
+\subsection{Differenzialgleichung 1. Ordnung}
+\begin{equation}
+    \varphi(x)' = f(x, \varphi(x)) \Rightarrow \varphi(x) = \int_{x_0}^x \varphi(t)' dt + \varphi(x_0)
+\end{equation}
+\begin{itemize}
+    \item Sonderfall: $f(x)$ unabhängig von  $\varphi(x)$ \\
+    $\Rightarrow$ Lösung
+
+    \item Allgemein: $\varphi(x)' = f(x, \varphi(x))$ \\
+    $\Rightarrow$ Näherung durch $\varphi(x) = (x - x_0) \cdot f(x_0, \varphi(x_0)) + \varphi(x_0)$ \\
+    \textit{für kleine} $|x - x_0|$
+\end{itemize}
+
+\subsection{System von Differenzialgleichungen 1. Ordnung}
+\begin{equation}
+    y_1' = f(x,y_1, \cdots y_n), \cdots y_n' = f(x,y_1, \cdots y_n)
+\end{equation}
+\begin{equation}
+    \Rightarrow \varphi(x) = \varphi(x_0) + f(x_0, \varphi(x_0)) \cdot (x - x_0)
+\end{equation}
+
+\subsubsection{Einzelteile der Gleichung}
+\begin{displaymath}
+    \varphi(x) =
+    \begin{pmatrix}
+        \varphi(x)_1 \\
+        \varphi(x)_2 \\
+        \vdots \\
+        \varphi(x)_n
+    \end{pmatrix}
+\end{displaymath}
+
+\begin{displaymath}
+    \varphi(x)' =
+    \begin{pmatrix}
+        \varphi(x)'_1 \\
+        \varphi(x)'_2 \\
+        \vdots \\
+        \varphi(x)'_n
+    \end{pmatrix}
+\end{displaymath}
+
+\begin{displaymath}
+    f
+    \begin{pmatrix}
+        x,
+        \begin{pmatrix}
+            y_1 \\ \vdots \\ y_n
+        \end{pmatrix}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        f(x, y_1, \cdots y_n)_1 \\
+        \vdots \\
+        f(x, y_1, \cdots y_n)_n
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        y_1' \\
+        \vdots \\
+        y_n'
+    \end{pmatrix}
+\end{displaymath}
+
+\subsection{Differenzialgleichung n-ter Ordnung}
