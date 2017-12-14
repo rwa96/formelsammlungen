@@ -21,3 +21,7 @@
 *.tps
 
 *.idx
+
+*.fdb_latexmk
+
+*.fls
