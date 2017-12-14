@@ -6,8 +6,6 @@
 
 *.out
 
-*.pdf
-
 *.snm
 
 *.gz
@@ -21,3 +19,7 @@
 *.tps
 
 *.idx
+
+*.fdb_latexmk
+
+*.fls
