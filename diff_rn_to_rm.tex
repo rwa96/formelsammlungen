@@ -68,9 +68,9 @@
 \end{enumerate}
 
 \subsection{Differenzialgleichung 1. Ordnung}
-\begin{equation}
+\begin{equation*}
     \varphi(x)' = f(x, \varphi(x)) \Rightarrow \varphi(x) = \int_{x_0}^x \varphi(t)' dt + \varphi(x_0)
-\end{equation}
+\end{equation*}
 \begin{itemize}
     \item Sonderfall: $f(x)$ unabhängig von  $\varphi(x)$ \\
     $\Rightarrow$ Lösung
@@ -81,12 +81,12 @@
 \end{itemize}
 
 \subsection{System von Differenzialgleichungen 1. Ordnung}
-\begin{equation}
+\begin{equation*}
     y_1' = f(x,y_1, \cdots y_n), \cdots y_n' = f(x,y_1, \cdots y_n)
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
     \Rightarrow \varphi(x) = \varphi(x_0) + f(x_0, \varphi(x_0)) \cdot (x - x_0)
-\end{equation}
+\end{equation*}
 
 \subsubsection{Einzelteile der Gleichung}
 \begin{displaymath}
@@ -131,4 +131,19 @@
     \end{pmatrix}
 \end{displaymath}
 
+\subsection{Lippschitzbedingung}
+\begin{equation*}
+    |f(x, y) - f(x, \tilde{y})| \leq |y - \tilde{y}| \cdot L
+\end{equation*}
+
+\subsection{Eindeutigkeitssatz}
+Es seien $\varphi$ und $\psi$ zwei Lösungen der DGL $\varphi, \psi: \mathbb{R} \rightarrow \mathbb{R}^n$. \\
+Gilt $\varphi(x_0) = \psi(x_0)$ für ein $x_0 \in \mathbb{R}$, \\
+so gilt $\varphi(x) = \varphi(\psi)$ für alle $x$
+
 \subsection{Differenzialgleichung n-ter Ordnung}
+\begin{equation*}
+    f(x, y, y^{(1)}, y^{(2)}, \cdots y^{(n-1)}) = y^{(n)}
+    \Rightarrow
+    \varphi^{(n)}(x) = f(x, \varphi(x), \varphi^{(1)}(x), \varphi^{(2)}(x), \cdots \varphi^{(n-1)}(x))
+\end{equation*}
