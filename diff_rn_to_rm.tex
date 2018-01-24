@@ -147,3 +147,21 @@ so gilt $\varphi(x) = \varphi(\psi)$ für alle $x$
     \Rightarrow
     \varphi^{(n)}(x) = f(x, \varphi(x), \varphi^{(1)}(x), \varphi^{(2)}(x), \cdots \varphi^{(n-1)}(x))
 \end{equation*}
+
+\subsection{Elementare Lösungsmethoden}
+\begin{enumerate}
+    \item $y' = f(x) \cdot g(y)$ mit $f,g: \mathbb{R} \rightarrow \mathbb{R}$
+    \begin{equation*}
+        \varphi(x_0) = y_0 \Rightarrow
+        \int_{y_0}^{\varphi(x)} \frac{1}{g(t)} dt
+        = \int_{x_0}^x f(t) dt
+    \end{equation*}
+
+    \item $y' = a(x) \cdot y + b(x)$ mit $\varphi(x) = exp(\int_{x_0}^x a(t) dt)$
+    \begin{equation*}
+        \psi(x_0) = c \Rightarrow
+        \psi(x) = \varphi(x) \cdot \bigg(c + \int_{x_0}^x \frac{b(t)}{\varphi(t)} dt\bigg)
+    \end{equation*}
+
+    \item Substitution: $y' = f\big(\frac{y}{x}\big)$ mit $z = \frac{y}{x}$
+\end{enumerate}
