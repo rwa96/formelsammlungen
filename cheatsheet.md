@@ -2,14 +2,15 @@
 
 ## BDSG (Bundes Datenschutz Gesetz)
 §1 Schutz des Einzelnen vor Persönlichkeitsrechts-Beeinträchtigung
-1.  Schutz und __keine__ Einschränkung des Verkehrs personenbezogener Daten
+1.  __Schutz__ und __keine Einschränkung__ des Verkehrs personenbezogener Daten
 2.  keine Anwendung bei __persönlicher oder familiärer__ Nutzung
 
-§4 __Einwilligung__ falls nicht rechtlich, __Transparenz__ falls rechtlich
+### Datenerhebung
+§4 __Einwilligung__ falls nicht rechtlich und __Transparenz__ bei (Zweck, Verarbeitung, Nutzung, Zielgruppe)
 
-§28 (Für Verträge) DV erlaubt wenn __erforderlich für rechtsgeschäftliches Schuldverhältnis__ (vor - und nachvertraglich)
+§28 __(Für Verträge)__ DV erlaubt wenn __erforderlich für rechtsgeschäftliches Schuldverhältnis__ (vor - und nachvertraglich)
 
-§29 (Andere Zwecke) DV erlaubt wenn __kein schutzwürdiges Interesse__, __öffentliche quelle__
+§29 __(Andere Zwecke)__ DV erlaubt wenn __kein schutzwürdiges Interesse__, __öffentliche quelle__
 
 ### Personenbezogene Daten
 *   Bezieht sich auf __identifizierte__ oder __identifizierbare__ Person
@@ -22,8 +23,8 @@
     - Gerwerkschaft
     - Gesundheit
     - Sexualleben
-    - genetische Daten (GVO)
-    - biometrische Daten (GVO)
+    - genetische Daten __(GVO)__
+    - biometrische Daten __(GVO)__
 
 ### Medium
 Alles was direkt mit EDV zu tun hat
@@ -38,6 +39,8 @@ Alles was direkt mit EDV zu tun hat
 ### Einwilligung für Werbung
 *   Vertragserfüllung <-> DV personenbezogener Daten
 *   eindeutig bestätigend, Opt In!
+
+###
 
 ## KUG (Kunsturheberechts Gesetz)
 
