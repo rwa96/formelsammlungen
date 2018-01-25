@@ -71,97 +71,30 @@
 \begin{equation*}
     \varphi(x)' = f(x, \varphi(x)) \Rightarrow \varphi(x) = \int_{x_0}^x \varphi(t)' dt + \varphi(x_0)
 \end{equation*}
-\begin{itemize}
-    \item Sonderfall: $f(x)$ unabhängig von  $\varphi(x)$ \\
-    $\Rightarrow$ Lösung
 
-    \item Allgemein: $\varphi(x)' = f(x, \varphi(x))$ \\
-    $\Rightarrow$ Näherung durch $\varphi(x) = (x - x_0) \cdot f(x_0, \varphi(x_0)) + \varphi(x_0)$ \\
-    \textit{für kleine} $|x - x_0|$
-\end{itemize}
-
-\subsection{System von Differenzialgleichungen 1. Ordnung}
+\subsubsection{Näherung}
 \begin{equation*}
-    y_1' = f(x,y_1, \cdots y_n), \cdots y_n' = f(x,y_1, \cdots y_n)
-\end{equation*}
-\begin{equation*}
-    \Rightarrow \varphi(x) = \varphi(x_0) + f(x_0, \varphi(x_0)) \cdot (x - x_0)
-\end{equation*}
-
-\subsubsection{Einzelteile der Gleichung}
-\begin{displaymath}
-    \varphi(x) =
-    \begin{pmatrix}
-        \varphi(x)_1 \\
-        \varphi(x)_2 \\
-        \vdots \\
-        \varphi(x)_n
-    \end{pmatrix}
-\end{displaymath}
-
-\begin{displaymath}
-    \varphi(x)' =
-    \begin{pmatrix}
-        \varphi(x)'_1 \\
-        \varphi(x)'_2 \\
-        \vdots \\
-        \varphi(x)'_n
-    \end{pmatrix}
-\end{displaymath}
-
-\begin{displaymath}
-    f
-    \begin{pmatrix}
-        x,
-        \begin{pmatrix}
-            y_1 \\ \vdots \\ y_n
-        \end{pmatrix}
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-        f(x, y_1, \cdots y_n)_1 \\
-        \vdots \\
-        f(x, y_1, \cdots y_n)_n
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-        y_1' \\
-        \vdots \\
-        y_n'
-    \end{pmatrix}
-\end{displaymath}
-
-\subsection{Lippschitzbedingung}
-\begin{equation*}
-    |f(x, y) - f(x, \tilde{y})| \leq |y - \tilde{y}| \cdot L
-\end{equation*}
-
-\subsection{Eindeutigkeitssatz}
-Es seien $\varphi$ und $\psi$ zwei Lösungen der DGL $\varphi, \psi: \mathbb{R} \rightarrow \mathbb{R}^n$. \\
-Gilt $\varphi(x_0) = \psi(x_0)$ für ein $x_0 \in \mathbb{R}$, \\
-so gilt $\varphi(x) = \varphi(\psi)$ für alle $x$
-
-\subsection{Differenzialgleichung n-ter Ordnung}
-\begin{equation*}
-    f(x, y, y^{(1)}, y^{(2)}, \cdots y^{(n-1)}) = y^{(n)}
-    \Rightarrow
-    \varphi^{(n)}(x) = f(x, \varphi(x), \varphi^{(1)}(x), \varphi^{(2)}(x), \cdots \varphi^{(n-1)}(x))
+    \varphi(x) = (x - x_0) \cdot f(x_0, \varphi(x_0)) + \varphi(x_0)
 \end{equation*}
 
 \subsection{Elementare Lösungsmethoden}
-\begin{enumerate}
-    \item $y' = f(x) \cdot g(y)$ mit $f,g: \mathbb{R} \rightarrow \mathbb{R}$
+\begin{itemize}
+    \item $\varphi(x)' = f(x) \cdot g(\varphi(x))$
     \begin{equation*}
-        \varphi(x_0) = y_0 \Rightarrow
-        \int_{y_0}^{\varphi(x)} \frac{1}{g(t)} dt
+        \varphi(x_0) = \varphi(x_0) \Rightarrow
+        \int_{\varphi(x_0)}^{\varphi(x)} \frac{1}{g(t)} dt
         = \int_{x_0}^x f(t) dt
     \end{equation*}
 
-    \item $y' = a(x) \cdot y + b(x)$ mit $\varphi(x) = exp(\int_{x_0}^x a(t) dt)$
-    \begin{equation*}
-        \psi(x_0) = c \Rightarrow
-        \psi(x) = \varphi(x) \cdot \bigg(c + \int_{x_0}^x \frac{b(t)}{\varphi(t)} dt\bigg)
-    \end{equation*}
+    \item $ \psi(x)' = a(x) \cdot \varphi(x) + b(x)$
+    \begin{itemize}
+        \item $\varphi(x) = \varphi(x_0) \cdot exp(\int_{x_0}^x a(t) dt)$
+        \item $\psi(x) = \varphi(x) \cdot \bigg(\int_{x_0}{x} \frac{b(t)}{\varphi(t)} dt\bigg)$
+    \end{itemize}
 
-    \item Substitution: $y' = f\big(\frac{y}{x}\big)$ mit $z = \frac{y}{x}$
-\end{enumerate}
+    \item $\varphi(x)' = f\big(\frac{\varphi(x)}{x}\big)$
+    \begin{itemize}
+        \item $z(x) = \frac{\varphi(x)}{x}$
+        \item $z(x)' = \frac{1}{x} \cdot (f(z(x)) - z)$
+    \end{itemize}
+\end{itemize}
