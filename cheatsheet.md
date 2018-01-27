@@ -5,7 +5,7 @@
 1.  __Schutz__ und __keine Einschränkung__ des Verkehrs personenbezogener Daten
 2.  keine Anwendung bei __persönlicher oder familiärer__ Nutzung
 
-### Datenerhebung/Verarbeitung
+### Verarbeitung
 §4 Zulässigkeit
 1.  __Einwilligung__ falls nicht rechtlich und
 2.  Ohne Mitwirkung falls __erforderlich__ oder __unverhältnismäßiger Aufwand__
@@ -41,7 +41,7 @@ Alles was direkt mit EDV zu tun hat
 ## DS-GVO (EU-Datenschutz-Grundverordnung)
 (1) Genau wie §1 im BDSG
 
-### Datenerhebung/Verarbeitung
+### Verarbeitung
 (5)
 *   Rechtmäßigkeit
 *   Zweckbindung
@@ -66,18 +66,96 @@ Alles was direkt mit EDV zu tun hat
 *   Vertragserfüllung __<->__ DV personenbezogener Daten
 *   eindeutig bestätigend, __Opt In!__
 
-###
-
 ## KUG (Kunsturheberechts Gesetz)
 
 ## TMG
+
+### Nutzungsdaten
+*   Identifikation
+*   Zeitangaben der Nutzung
+*   in Anspruch genommene Inhalte
+
+### Zweck
+§15 (3)
+*   Werbung
+*   Marktforschung
+*   Gestaltung
+*   Mit Hinweis auf __Opt Out__
+
+### Cookie
+*   Wenn technisch erforderlich
+*   E-Privacy Richtlinie fordert __Opt Out__
+
+### Tell a Friend
+*   reine Produktempfehlung
+*   Private Absender
+*   keine Versenderprämien
+*   keine vorformulierten Texte
+*   nur ein Empfänger
+*   Hinweis auf Empfängereinverständnis
+
+### Kundenüberprüfung
+#### Scoring
+für Entscheidung des Vertragsverhältnisses
+*   Wissenschaftlich anerkannt
+*   nur legale Daten
+*   nicht nur Anschriftsdaten
+*   __Unterrichtung__ bei nutzung v. Anschriftsdaten
+
+#### Auskunfteien
+*   Wie kommt sie and Daten
+    *   __keine Kreditinstitute__ (__Negativdaten__: Verpflichtung des Kunden)
+        * Urteil
+        * Mahnung
+        * Insolvenz
+    * __Kreditinstitute__ (__Positiv - und Negativdaten__)
+        * Infos zu Bankgeschäften
+        * wenn keine __schutzwürdigen Interessen__
+        * nicht bei bloßen Anfragen
+*   Wann werden Daten übermittelt
+    * __konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
+
+## Strafverfolgung (repressiv -> muss)
+### StPO
+#### Ich muss
+*   §48 Zeugenaussage
+*   §94 Beschlagnahme v. Gegenständen
+*   §100a Telekommunikationsüberwachung (falls verschlüsselt)
+*   §100g Erhebung v. Verkehrsdaten (falls unverschlüsselt)
+*   §102 Hausdurchsuchung
+
+#### Ich muss nicht
+*   §163 Fragen ohne Zeugenvorladung
+*   pers. bezogene Informaitonen herausgeben
+    §28.2 (BDSG) staatliche/öffentliche Sicherheit und kein schutzwürdiges Interesse
+
+## Gefahrenabwehr (präventiv -> nach Ermessen)
+### BayPAG
+#### Ich muss
+*   (12) Befragung: Name, Vorname, Tag, Ort, Geburt, Wohnanschrift, Staatsangehörigkeit
+*   (25) Sicherstellung von Sachen
+*   (43a) Telekommunikationsüberwachung
+
+#### Ich muss nicht
+*   (30) Datenerhebung:
+    *   nur wenn rechtlich zugelassen
+    *   offen erheben (außer es geht nicht anders)
+
+## Nachrichtendienste
+§8 (BVerfSchG)
+2.  Methoden, Gegenstände und Instrumente zur heimlichen Informaitonsbeschaffung
+4.  freiwillige Angaben zu pers. bez. Daten
 
 ## TKG
 
 ![Gesethgebung: Onlineshops](pics/gesetzgebung_onlineshops.png)
 
 ## BFStrMG (Bundesfernstraßenmautgesetz)
-
+§7 (2) __ausschließlich zur Überwachung der Gesetzvorschrift__
+*   Fahrzeugbild
+*   Name
+*   Ort/Zeit
+*   Kennzeichen
 
 ## Grundrechtsschutz (Opt In mit Ausnamen)
 (1.1) GG __*Ich bestimme, wenn ich nicht will ist alles verboten (Ausnamen)*__
