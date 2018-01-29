@@ -2,12 +2,12 @@
 
 \subsection{Linearisierung}
 \begin{equation*}
-	f(x_1 + \delta x_1, x_2 + \delta x_2, \cdots x_n + \delta x_n) \approx f(x_1 \cdots x_n) + \frac{\delta f}{\delta x_1} \delta x_1 \cdots + \frac{\delta f}{\delta x_n} \delta x_n
+	f(x_1 + \Delta x_1, x_2 + \Delta x_2, \cdots x_n + \Delta x_n) \approx f(x_1 \cdots x_n) + \frac{\delta f}{\delta x_1} \cdot \Delta x_1 \cdots + \frac{\delta f}{\delta x_n} \cdot \Delta x_n
 \end{equation*}
 
 \subsection{Fehlerrechnung}
 \begin{equation*}
-	e_{max} = \bigg | \frac{\delta f}{\delta x_1}(\bar{x_1} \cdots \bar{x_n}) \Delta x_1 \bigg | + \cdots + \bigg | \frac{\delta f}{\delta x_n}(\bar{x_1} \cdots \bar{x_n}) \Delta x_n \bigg |
+	e_{max} = \bigg | \frac{\delta f}{\delta x_1}(\bar{x_1} \cdots \bar{x_n}) \cdot \Delta x_1 \bigg | + \cdots + \bigg | \frac{\delta f}{\delta x_n}(\bar{x_1} \cdots \bar{x_n}) \cdot \Delta x_n \bigg |
 \end{equation*}
 ($\Delta x_i$ ist die Messabweichung, $\bar{x_i}$ der Messwert)
 
@@ -31,7 +31,7 @@
 \subsection{Integration}
 \begin{itemize}
 	\item Doppelintegral (Funktionen mit mehreren Parametern) \\
-	$\int_B f(x, y) = \int_{a1}^{a2}(\int_{b1}^{b2} f(x, y) dy) dx$
+	$\int_B h(x, y) = \int_{a1}^{a2}(\int_{b1}^{b2} h(x, y) dy) dx$
     \begin{figure}[h!]
         \centering
         \includegraphics[scale=.5]{pics/doppelintegral}
@@ -39,7 +39,7 @@
     \end{figure}
 
 	\item Geschachtelte Funktionen \\
-	$\int_{B_{\arrowvert_{f(x)}^{g(x)}}} f(x, y) = \int_{a1}^{a2}(\int_{f(x)}^{g(x)} f(x, y) dy) dx$
+	$\int_{B_{\arrowvert_{f(x)}^{g(x)}}} h(x, y) = \int_{a1}^{a2}(\int_{f(x)}^{g(x)} h(x, y) dy) dx$
     \begin{figure}[h!]
         \centering
         \includegraphics[scale=.5]{pics/doppelintegralfunktionen}

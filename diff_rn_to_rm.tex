@@ -87,10 +87,9 @@
     \end{equation*}
 
     \item $ \psi(x)' = a(x) \cdot \varphi(x) + b(x)$
-    \begin{itemize}
-        \item $\varphi(x) = \varphi(x_0) \cdot exp(\int_{x_0}^x a(t) dt)$
-        \item $\psi(x) = \varphi(x) \cdot \bigg(\int_{x_0}{x} \frac{b(t)}{\varphi(t)} dt\bigg)$
-    \end{itemize}
+    \begin{equation*}
+        \psi(x) = exp\bigg(\int_{x_0}^x a(t) dt \bigg) \cdot \bigg(\psi(x_0) + \int_{x_0}^x \frac{b(t)}{\varphi(t)} dt \bigg)
+    \end{equation*}
 
     \item $\varphi(x)' = f\big(\frac{\varphi(x)}{x}\big)$
     \begin{itemize}
