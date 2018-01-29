@@ -1,3 +1,11 @@
+# Visualisierungen
+
+![Gesethgebung: Onlineshops](pics/gesetzgebung_onlineshops.png)
+
+![Gesethgebung: Datenerhebung](pics/datenerhebung.png)
+
+![Gesethgebung: Videoüberwachung](pics/videoueberwachung.png)
+
 # Paragraphen
 
 ## BDSG (Bundes Datenschutz Gesetz)
@@ -5,15 +13,52 @@
 1.  __Schutz__ und __keine Einschränkung__ des Verkehrs personenbezogener Daten
 2.  keine Anwendung bei __persönlicher oder familiärer__ Nutzung
 
-### Verarbeitung
+§6b Videoüberwachung
+*   Klar erkennbarer Hinweis
+*   erkennbarer Nutzungswille des Raumes
+*   Kameraatrappen = keine Datenerhebung
+
+§9 Schutzgewährleistung (Abwägung: __Schutzwürdigkeit und Aufwand__)
+
+### Erhebung/Verarbeiten/Übermitteln
 §4 Zulässigkeit
 1.  __Einwilligung__ falls nicht rechtlich und
 2.  Ohne Mitwirkung falls __erforderlich__ oder __unverhältnismäßiger Aufwand__
-3.  __Transparenz__ bei (Zweck, Verarbeitung, Nutzung, Zielgruppe)
+3.  __Transparenz__ bei (Zweck, Verarbeitung, Nutzung, Empfänger)
 
 §28 __(Für Verträge)__ DV erlaubt wenn __erforderlich für rechtsgeschäftliches Schuldverhältnis__ (vor - und nachvertraglich)
 
 §29 __(Andere Zwecke)__ DV erlaubt wenn __kein schutzwürdiges Interesse__, __öffentliche quelle__
+
+### Scoring
+§28b für Entscheidung des Vertragsverhältnisses
+*   Wissenschaftlich anerkannt
+*   nur legale Daten
+*   nicht nur Anschriftsdaten
+*   __Unterrichtung__ bei nutzung v. Anschriftsdaten
+
+### Auskunft auf Verlangen
+§24 Auskunft über:
+*   Identität
+*   pers. und sachlichen Verhältnisse
+*   Herkunft
+*   Empfänger und Empfänger-Zielgruppe
+*   Zweck
+*   Scoring Werte
+
+#### Verlangen
+*   Schriftlich oder Mündlich (__keine Ablehnung, aber Aufforderung zur Präzision möglich__)
+*   Unentgeltlich einmal jährlich
+
+#### Löschung & Sperrung
+§35
+*   Wenn Speicherung __unzulässig__
+*   nicht mehr für __Zweckerfüllung__ nötig
+*   Prüfung nach __4 Jahren__
+*   Sperrung falls:
+    *   Aufbewahrungsfristen
+    *   schutzwürdige Interessen
+    *   unverhältnismäßiger Aufwand
 
 ### Einwilligung für Werbung
 *   Werbeliste __(eigenes CRM, öffentliche Daten)__
@@ -38,10 +83,19 @@ Alles was direkt mit EDV zu tun hat
 *   __Handschriftliches__ ausgeschlossen
 *   __Beschäftigtendaten__ mediumsunabhängig
 
+### Oursourcing
+§11
+*   Auftrag is Schriftlich
+*   Regelmäßige Kontrollen
+
+#### Im Ausland (nicht EU)
+1.  gibt es Rechtsgrundlage
+2.  existiert dort angemessenes Datenschutzniveau
+
 ## DS-GVO (EU-Datenschutz-Grundverordnung)
 (1) Genau wie §1 im BDSG
 
-### Verarbeitung
+### Erheben/Verarbeiten/Übermitteln
 (5)
 *   Rechtmäßigkeit
 *   Zweckbindung
@@ -66,7 +120,49 @@ Alles was direkt mit EDV zu tun hat
 *   Vertragserfüllung __<->__ DV personenbezogener Daten
 *   eindeutig bestätigend, __Opt In!__
 
+### Auskunft auf Verlangen
+#### Modalitäten
+(12)
+*   Transparenz (Form, Sprache)
+*   1 Monat max
+*   Unentgeltlich im Normalfall
+*   Identitätsfeststellung
+
+#### (15) Umfang
+*   Personenbezogene Daten
+*   Verarbeitungszwecke
+*   Kategorisierung
+*   Empfänger (Kategorie)
+*   Speicherdauer
+*   Hinweis auf Rechte
+*   Informaitonen über Herkunft
+*   Drittlandtransfehr
+
+#### Grenzen/Ausnahmen
+*   Einschrenkung d. Rechte u. Freiheiten anderer
+*   präzision bei __großer__ Datenmenge
+*   Forschung (§27 BDSG)
+*   Gegen Rechtsvorschrift (z.B. §29 BDSG)
+*   unverhältnismäßiger Aufwand
+
+#### (16) Berichtigung
+*   Berichtigung und Vervollständigung (__außer Forschung__)
+
+#### (17) Löschung/Vergessen
+*   Wegfall des Zwecks
+*   keine Rechtsgrundlage
+*   wenn Wiederspruchsrecht überwiegt
+
+##### Vergessen (falls unrechtmäßig veröffentlicht)
+Andere müssen auch Löschen
+
 ## KUG (Kunsturheberechts Gesetz)
+§22 nur mit __Einwilligung__ (im Zweifel auch __bei Bezahlung__)
+
+§23 Ausnamen
+*   Zeitgeschichte
+*   Personen nur als Beiwerk
+*   höheres Interesse (Kunst)
 
 ## TMG
 
@@ -94,14 +190,6 @@ Alles was direkt mit EDV zu tun hat
 *   nur ein Empfänger
 *   Hinweis auf Empfängereinverständnis
 
-### Kundenüberprüfung
-#### Scoring
-für Entscheidung des Vertragsverhältnisses
-*   Wissenschaftlich anerkannt
-*   nur legale Daten
-*   nicht nur Anschriftsdaten
-*   __Unterrichtung__ bei nutzung v. Anschriftsdaten
-
 #### Auskunfteien
 *   Wie kommt sie and Daten
     *   __keine Kreditinstitute__ (__Negativdaten__: Verpflichtung des Kunden)
@@ -116,6 +204,7 @@ für Entscheidung des Vertragsverhältnisses
     * __konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
 
 ## Strafverfolgung (repressiv -> muss)
+__Polizei, LKA, BKA__
 ### StPO
 #### Ich muss
 *   §48 Zeugenaussage
@@ -130,6 +219,7 @@ für Entscheidung des Vertragsverhältnisses
     §28.2 (BDSG) staatliche/öffentliche Sicherheit und kein schutzwürdiges Interesse
 
 ## Gefahrenabwehr (präventiv -> nach Ermessen)
+__Polizei, LKA, BKA__
 ### BayPAG
 #### Ich muss
 *   (12) Befragung: Name, Vorname, Tag, Ort, Geburt, Wohnanschrift, Staatsangehörigkeit
@@ -142,13 +232,27 @@ für Entscheidung des Vertragsverhältnisses
     *   offen erheben (außer es geht nicht anders)
 
 ## Nachrichtendienste
+*   Inland: Verfassungschutzbehörden (Bund und Länder)
+*   Ausland: BSD
+*   Bundeswehr: Militärischer Abwehrdienst
+
 §8 (BVerfSchG)
 2.  Methoden, Gegenstände und Instrumente zur heimlichen Informaitonsbeschaffung
 4.  freiwillige Angaben zu pers. bez. Daten
 
 ## TKG
+### Vorratsdatenspeicherung (10 Wochen)
+#### Daten
+*   Mobile Telefonie
+    *   Standortdaten (4 Wochen)
+*   Internetverbindung
+    *   IP
+    *   Nutzerkennung
+    *   Datum, Uhrzeit, Beginn und Ende
 
-![Gesethgebung: Onlineshops](pics/gesetzgebung_onlineshops.png)
+#### Verwendung
+*   §113b Übermittlung an Strafverfolgung und Gefahrenabwehr bei __besonders Schwehren Taten__
+*   §113c §113d Sicherung und Protokollierung
 
 ## BFStrMG (Bundesfernstraßenmautgesetz)
 §7 (2) __ausschließlich zur Überwachung der Gesetzvorschrift__
