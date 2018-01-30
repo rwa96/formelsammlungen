@@ -1,72 +1,9 @@
-# Visualisierungen
+# Persönlichkeitsrecht
 
-![Gesethgebung: Onlineshops](pics/gesetzgebung_onlineshops.png)
-
-![Gesethgebung: Datenerhebung](pics/datenerhebung.png)
-
-![Gesethgebung: Videoüberwachung](pics/videoueberwachung.png)
-
-# Paragraphen
-
-## BDSG (Bundes Datenschutz Gesetz)
-§1 Schutz des Einzelnen vor Persönlichkeitsrechts-Beeinträchtigung
-1.  __Schutz__ und __keine Einschränkung__ des Verkehrs personenbezogener Daten
-2.  keine Anwendung bei __persönlicher oder familiärer__ Nutzung
-
-§6b Videoüberwachung
-*   Klar erkennbarer Hinweis
-*   erkennbarer Nutzungswille des Raumes
-*   Kameraatrappen = keine Datenerhebung
-
-§9 Schutzgewährleistung der erhobenen Daten (Abwägung: __Schutzwürdigkeit und Aufwand__)
-
-### Erhebung/Verarbeiten/Übermitteln
-§4 Zulässigkeit
-1.  __Einwilligung__ falls nicht rechtlich und
-2.  Ohne Mitwirkung falls __erforderlich__ oder __unverhältnismäßiger Aufwand__
-3.  __Transparenz__ bei (Zweck, Verarbeitung, Nutzung, Empfänger)
-
-§28 __(Für Verträge)__ DV erlaubt wenn __erforderlich für rechtsgeschäftliches Schuldverhältnis__ (vor - und nachvertraglich)
-
-§29 __(Andere Zwecke)__ DV erlaubt wenn __kein schutzwürdiges Interesse__, __öffentliche quelle__
-
-### Scoring
-§28b für Entscheidung des Vertragsverhältnisses
-*   Wissenschaftlich anerkannt
-*   nur legale Daten
-*   nicht nur Anschriftsdaten
-*   __Unterrichtung__ bei nutzung v. Anschriftsdaten
-
-### Auskunft auf Verlangen
-§24 Auskunft über:
-*   Identität
-*   pers. und sachlichen Verhältnisse
-*   Herkunft
-*   Empfänger und Empfänger-Zielgruppe
-*   Zweck
-*   Scoring Werte
-
-#### Verlangen
-*   Schriftlich oder Mündlich (__keine Ablehnung, aber Aufforderung zur Präzision möglich__)
-*   Unentgeltlich einmal jährlich
-
-#### Löschung & Sperrung
-§35
-*   Wenn Speicherung __unzulässig__
-*   nicht mehr für __Zweckerfüllung__ nötig
-*   Prüfung nach __4 Jahren__
-*   Sperrung falls:
-    *   Aufbewahrungsfristen
-    *   schutzwürdige Interessen
-    *   unverhältnismäßiger Aufwand
-
-### Einwilligung für Werbung
-*   Werbeliste __(eigenes CRM, öffentliche Daten)__
-*   Grundsätzlich __Schriftlich (mit Ausnamen)__
-
-### Personenbezogene Daten
-*   Bezieht sich auf __identifizierte__ oder __identifizierbare__ Person
-*   Alle __verfügbaren Mittel__ und __gesammter Aufwand (nur BDSG)__ sind zu Betrachten
+# Personenbezogene Daten
+*   bestimmte Person: direkt identifizierbar
+*   bestimmbare Person: indirekt (z.B. mittels Zusammenführung) identifizierbar
+*   Alle __verfügbaren Mittel__ und __gesammter Aufwand__ sind zu Betrachten
 *   gilt nicht für __anonymisierte__ Daten
 *   Sensibel:
     - Ethnik
@@ -75,96 +12,29 @@
     - Gerwerkschaft
     - Gesundheit
     - Sexualleben
-    - genetische Daten __(GVO)__
-    - biometrische Daten __(GVO)__
+    - genetische Daten
+    - biometrische Daten
 
-### Medium
-Alles was direkt mit EDV zu tun hat
-*   __Handschriftliches__ ausgeschlossen
-*   __Beschäftigtendaten__ mediumsunabhängig
+# Videoüberwachung
+*   Klar erkennbarer Hinweis
+*   erkennbarer Nutzungswille des Raumes
+*   Kameraatrappen = keine Datenerhebung
 
-### Oursourcing (__Übermittlung__ pers. bez. Daten)
-§11
-*   Auftrag is Schriftlich
-*   Regelmäßige Kontrollen
+## öffentlich zugänglich
+*   öffentlichem Verkehr gewidmet
+*   nach willen von Jederman benutzbar
 
-#### Im Ausland (nicht EU)
-1.  gibt es Rechtsgrundlage
-2.  existiert dort angemessenes Datenschutzniveau
+## Unternehmen öffentlich zugänglich
+*   unbefugtes Betreten
+*   bewegliches Eigentum/Personenschutz
+*   Abschreckung/Beweissicherung
 
-## DS-GVO (EU-Datenschutz-Grundverordnung)
-(1) Genau wie §1 im BDSG
+## Unternehmen nicht öffentlich (Mitarbeiter)
+*   Vorfall/Erforderlichkeit
+*   nicht heimlich
+*   verhältnismäßig
 
-### Erheben/Verarbeiten/Übermitteln
-(5)
-*   Rechtmäßigkeit
-*   Zweckbindung
-*   Datenminimierung
-*   Löschung __falscher__ Daten
-*   Löschung __nach Zweckbindung__ (Ausnamen: __Wissenschaft/Historie__)
-
-### Rechtmäßigkeit
-(6) wenn:
-*   Einwilligung
-*   Vertrag
-*   [...]
-*   Interessensabwägung
-*   Zweckänderung
-
-### Werbung
-(6) Rechtsmäßigkeit der Verarbeitung
-*   Werbeinteresse __<__ Peronenbezogene Daten
-*   Wiederspruchsrecht
-
-#### Einwilligung für Werbung
-*   Vertragserfüllung __<->__ DV personenbezogener Daten
-*   eindeutig bestätigend, __Opt In!__
-
-### Auskunft auf Verlangen
-#### Modalitäten
-(12)
-*   Transparenz (Form, Sprache)
-*   1 Monat max
-*   Unentgeltlich im Normalfall
-*   Identitätsfeststellung
-
-#### (15) Umfang
-*   Personenbezogene Daten
-*   Verarbeitungszwecke
-*   Kategorisierung
-*   Empfänger (Kategorie)
-*   Speicherdauer
-*   Hinweis auf Rechte
-*   Informaitonen über Herkunft
-*   Drittlandtransfehr
-
-#### Grenzen/Ausnahmen
-*   Einschrenkung d. Rechte u. Freiheiten anderer
-*   präzision bei __großer__ Datenmenge
-*   Forschung (§27 BDSG)
-*   Gegen Rechtsvorschrift (z.B. §29 BDSG)
-*   unverhältnismäßiger Aufwand
-
-#### (16) Berichtigung
-*   Berichtigung und Vervollständigung (__außer Forschung__)
-
-#### (17) Löschung/Vergessen
-*   Wegfall des Zwecks
-*   keine Rechtsgrundlage
-*   wenn Wiederspruchsrecht überwiegt
-
-##### Vergessen (falls unrechtmäßig veröffentlicht)
-Andere müssen auch Löschen
-
-## KUG (Kunsturheberechts Gesetz)
-§22 nur mit __Einwilligung__ (im Zweifel auch __bei Bezahlung__)
-
-§23 Ausnamen
-*   Zeitgeschichte
-*   Personen nur als Beiwerk
-*   höheres Interesse (Kunst)
-
-## TMG
+# Telemedien Dienst
 Plattformen mittels derer Inhalte angebonten werden
 
 ### Nutzungsdaten
@@ -173,17 +43,60 @@ Plattformen mittels derer Inhalte angebonten werden
 *   in Anspruch genommene Inhalte
 
 ### Zweck
-§15 (3)
 *   Werbung
 *   Marktforschung
 *   Gestaltung
 *   Mit Hinweis auf __Opt Out__
 
-### Cookie
-*   Wenn technisch erforderlich
-*   E-Privacy Richtlinie fordert __Opt Out__
+# §9 Schutzgewährleistung
+*   Zutritt (körperlich)
+*   Zugang (unbefugte Nutzung des EDV-Systems)
+*   Zugriff (Zugriffsrechte rwx oder ACL, Vertretungsregeln)
+*   Weitergabe  (Verschlüssellung)
+*   Eingabe (Verantwortliche für Änderungen)
+*   Auftrag (nur Weisungen d. Auftraggebers)
+*   Verfügbarkeitskontrolle (Katastrophenschutz, Backup)
 
-### Tell a Friend
+# Übermittlung
+
+# Erhebung
+*   §28 eigene Geschäftszwecke
+    (falls erforderlich für rechtsgeschäftliches Schuldverhältnis)
+*   §29 fremde Geschäftszwecke
+    (falls kein schutzwürdiges Interesse. Schufa, Warndienste, Auskunfteien)
+*   Für den Zweck des Beschäftigungsverhältnisses erforderlich
+
+## Rechtmäßigkeit
+*   Einwilligung
+*   Vertrag
+*   Interessensabwägung
+*   Zweckänderung
+
+## Einwilligung zur Erhebung
+*   Vorherig
+*   Freiwillig
+*   hinreichende Informaiton (Zweck, Verarbeitung und Nutzung)
+*   Falls nicht schriftlich -> deutlich dokumentiert und sichtbar
+*   jederzeit wiederrufbar
+
+# Werbung
+*   für eigene Angebote
+*   Werbeliste (Kundengruppe, Name, Vorname, Anschrift, Geburtsjahr)
+*   für Bestandskunden
+*   Grundsätzlich __Schriftlich (mit Ausnamen)__
+
+## Wiederspruch
+*   Hinweis bei Vertragsschluss und erster Werbung
+*   bei verantwortlicher Stelle
+*   keine Nutzung und Übermittlung
+*   Sperrung bei Dritten
+
+## Von Dritten
+*   Dokumentation der Übermittlung
+*   Ursprünglicher Erheber muss hervorgehen
+*   keine schutzwürdigen Interressen
+
+## Tell a Friend
 *   reine Produktempfehlung
 *   Private Absender
 *   keine Versenderprämien
@@ -191,69 +104,22 @@ Plattformen mittels derer Inhalte angebonten werden
 *   nur ein Empfänger
 *   Hinweis auf Empfängereinverständnis
 
-#### Auskunfteien
-*   Wie kommt sie and Daten
-    *   __keine Kreditinstitute__ (__Negativdaten__: Verpflichtung des Kunden)
-        * Urteil
-        * Mahnung
-        * Insolvenz
-    * __Kreditinstitute__ (__Positiv - und Negativdaten__)
-        * Infos zu Bankgeschäften
-        * wenn keine __schutzwürdigen Interessen__
-        * nicht bei bloßen Anfragen
-*   Wann werden Daten übermittelt
-    * __konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
+# Fernmeldegeheimnis
 
-## Strafverfolgung (repressiv -> muss)
-__Polizei, LKA, BKA__
-### StPO
-#### Ich muss
-*   §48 Zeugenaussage
-*   §94 Beschlagnahme v. Gegenständen
-*   §100a Telekommunikationsüberwachung (falls verschlüsselt)
-*   §100g Erhebung v. Verkehrsdaten (falls unverschlüsselt)
-*   §102 Hausdurchsuchung
-
-#### Ich muss nicht
-*   §163 Fragen ohne Zeugenvorladung
-*   pers. bezogene Informaitonen herausgeben
-    §28.2 (BDSG) staatliche/öffentliche Sicherheit und kein schutzwürdiges Interesse
-
-## Gefahrenabwehr (präventiv -> nach Ermessen)
-__Polizei, LKA, BKA__
-### BayPAG
-#### Ich muss
-*   (12) Befragung: Name, Vorname, Tag, Ort, Geburt, Wohnanschrift, Staatsangehörigkeit
-*   (25) Sicherstellung von Sachen
-*   (43a) Telekommunikationsüberwachung
-
-#### Ich muss nicht
-*   (30) Datenerhebung:
-    *   nur wenn rechtlich zugelassen
-    *   offen erheben (außer es geht nicht anders)
-
-## Nachrichtendienste
-*   Inland: Verfassungschutzbehörden (Bund und Länder)
-*   Ausland: BSD
-*   Bundeswehr: Militärischer Abwehrdienst
-
-§8 (BVerfSchG)
-2.  Methoden, Gegenstände und Instrumente zur heimlichen Informaitonsbeschaffung
-4.  freiwillige Angaben zu pers. bez. Daten
-
-## TKG
-Infrastruktur-Anbieter (darf so wenig wie möglich mitbekommen)
-*   §97 Speichern für: Entgeltermittlung und Abrechnung
+# Infrastruktur-Anbieter (darf so wenig wie möglich mitbekommen)
+*   Speichern für: Entgeltermittlung und Abrechnung
     *   Verkehrsdaten bis 6 Monate, Bestandsdaten bis Jahresende
-*   $100 Speichern für: Störungsbeseitigung/Missbrauchsbekämpfung
+*   Speichern für: Störungsbeseitigung/Missbrauchsbekämpfung
     *   Keine mindes/höchst Frist
     *   IP bis zu 7 Tage
 
-### Fernmeldegeheimnis
-§88 __Anbieter__ ist jeder der __geschäftsmäßig dauerhaft TK für Dritte__ erbringt
+## Schutzbereich
+*   nähere Unstände der TK/Verkehrsdaten
+*   Verkehrsdaten (Rufnummern, IP-Adressen, Datum, Dauer)
+*   Inhaltsdaten (gesprochenes Wort, ausgetauschte Daten)
+*   ausgenommen Bestandsdaten (für Vertragserfüllungs Zwecke)
 
-### Vorratsdatenspeicherung (10 Wochen)
-#### Daten
+# Vorratsdatenspeicherung (10 Wochen)
 *   Mobile Telefonie
     *   Standortdaten (4 Wochen)
 *   Internetverbindung
@@ -261,20 +127,106 @@ Infrastruktur-Anbieter (darf so wenig wie möglich mitbekommen)
     *   Nutzerkennung
     *   Datum, Uhrzeit, Beginn und Ende
 
-#### Verwendung
-*   §113b Übermittlung an Strafverfolgung und Gefahrenabwehr bei __besonders Schwehren Taten__
-*   §113c §113d Sicherung und Protokollierung
+## Verwendung
+*   Übermittlung an Strafverfolgung und Gefahrenabwehr bei __besonders Schwehren Taten__
+*   Sicherung und Protokollierung
 
-## BFStrMG (Bundesfernstraßenmautgesetz)
-§7 (2) __ausschließlich zur Überwachung der Gesetzvorschrift__
-*   Fahrzeugbild
-*   Name
-*   Ort/Zeit
-*   Kennzeichen
+# Spam
+*   Abweisen (Problem §206)
+*   Scannen und Klassifizieren (§88 Kenntnisnahme nur durch Empfänger: Ordner oder Header)
+*   Aussortieren beim Empfänger
 
-## Grundrechtsschutz (Opt In mit Ausnamen)
-(1.1) GG __*Ich bestimme, wenn ich nicht will ist alles verboten (Ausnamen)*__
-*   Individuum, freie Entfaltung
-*   Schutz der Freiheit
-*   Bedingung für Demokratie
-*   Basis für soz. Integration
+# Photos veröffentlichen
+*   bei Einwilligung
+*   öffentliches Interesse
+*   bei Bezahlung
+*   wenn Beiwerk
+*   bei kollektivem Willen
+*   höheres Interesse (Kunst)
+*   Zeitgeschichte
+
+# Auskunfteien
+
+## Datenbeschaffung
+*   keine Kreditinstitute: Negativdaten = Verpflichtung des Kunden
+    *   Urteil
+    *   Mahnung
+    *   Insolvenz
+*   Kreditinstitute (Positiv - und Negativdaten)
+    *   Infos zu Bankgeschäften
+    *   wenn keine __schutzwürdigen Interessen__
+    *   nicht bei bloßen Anfragen
+
+## Übermittlung
+__konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
+
+## Scoring
+*   für Entscheidung des Vertragsverhältnisses
+*   Wissenschaftlich anerkannt
+*   nur legale Daten
+*   nicht nur Anschriftsdaten
+*   __Unterrichtung__ bei nutzung v. Anschriftsdaten
+
+## §24 Auskunft der eigenen Daten
+*   Identität
+*   pers. und sachlichen Verhältnisse
+*   Herkunft
+*   Empfänger und Empfänger-Zielgruppe
+*   Zweck
+*   Scoring Werte
+*   Transparenz (Form, Sprache)
+*   Unentgeltlich im Normalfall
+
+### Verlangen
+*   Schriftlich oder Mündlich (__keine Ablehnung, aber Aufforderung zur Präzision möglich__)
+*   Unentgeltlich einmal jährlich
+*   1mal im Monat max
+
+## Löschung & Sperrung
+*   Wenn Speicherung __unzulässig__
+*   nicht mehr für __Zweckerfüllung__ nötig
+*   Prüfung nach __4 Jahren__
+*   Sperrung falls:
+    *   Aufbewahrungsfristen
+    *   schutzwürdige Interessen
+    *   unverhältnismäßiger Aufwand
+
+# Oursourcing (__Übermittlung__ pers. bez. Daten)
+*   Auftrag is Schriftlich
+*   Regelmäßige Kontrollen
+
+## Im Ausland (nicht EU)
+1.  gibt es Rechtsgrundlage
+2.  existiert dort angemessenes Datenschutzniveau
+
+# Strafverfolgung (repressiv -> muss)
+## Ich muss
+*   Zeugenaussage
+*   Beschlagnahme v. Gegenständen
+*   Telekommunikationsüberwachung (falls verschlüsselt)
+*   Erhebung v. Verkehrsdaten (falls unverschlüsselt)
+*   Hausdurchsuchung
+
+## Ich muss nicht
+*   Fragen ohne Zeugenvorladung
+*   pers. bezogene Informaitonen herausgeben
+    §28.2 (BDSG) staatliche/öffentliche Sicherheit und kein schutzwürdiges Interesse
+
+# Gefahrenabwehr (präventiv -> nach Ermessen)
+## Ich muss
+*   Befragung: Name, Vorname, Tag, Ort, Geburt, Wohnanschrift, Staatsangehörigkeit
+*   geg. Sicherstellung von meinen Sachen
+*   Telekommunikationsüberwachung
+
+## Ich muss nicht
+*   Datenerhebung:
+    *   nur wenn rechtlich zugelassen
+    *   offen erheben (außer es geht nicht anders)
+
+## Nachrichtendienste
+*   Methoden, Gegenstände und Instrumente zur heimlichen Informaitonsbeschaffung
+*   freiwillige Angaben zu pers. bez. Daten
+
+# Cookie
+*   Wenn technisch erforderlich
+*   E-Privacy Richtlinie fordert __Opt Out__
