@@ -18,7 +18,7 @@
 *   erkennbarer Nutzungswille des Raumes
 *   Kameraatrappen = keine Datenerhebung
 
-§9 Schutzgewährleistung (Abwägung: __Schutzwürdigkeit und Aufwand__)
+§9 Schutzgewährleistung der erhobenen Daten (Abwägung: __Schutzwürdigkeit und Aufwand__)
 
 ### Erhebung/Verarbeiten/Übermitteln
 §4 Zulässigkeit
@@ -83,7 +83,7 @@ Alles was direkt mit EDV zu tun hat
 *   __Handschriftliches__ ausgeschlossen
 *   __Beschäftigtendaten__ mediumsunabhängig
 
-### Oursourcing
+### Oursourcing (__Übermittlung__ pers. bez. Daten)
 §11
 *   Auftrag is Schriftlich
 *   Regelmäßige Kontrollen
@@ -165,6 +165,7 @@ Andere müssen auch Löschen
 *   höheres Interesse (Kunst)
 
 ## TMG
+Plattformen mittels derer Inhalte angebonten werden
 
 ### Nutzungsdaten
 *   Identifikation
@@ -241,6 +242,16 @@ __Polizei, LKA, BKA__
 4.  freiwillige Angaben zu pers. bez. Daten
 
 ## TKG
+Infrastruktur-Anbieter (darf so wenig wie möglich mitbekommen)
+*   §97 Speichern für: Entgeltermittlung und Abrechnung
+    *   Verkehrsdaten bis 6 Monate, Bestandsdaten bis Jahresende
+*   $100 Speichern für: Störungsbeseitigung/Missbrauchsbekämpfung
+    *   Keine mindes/höchst Frist
+    *   IP bis zu 7 Tage
+
+### Fernmeldegeheimnis
+§88 __Anbieter__ ist jeder der __geschäftsmäßig dauerhaft TK für Dritte__ erbringt
+
 ### Vorratsdatenspeicherung (10 Wochen)
 #### Daten
 *   Mobile Telefonie
