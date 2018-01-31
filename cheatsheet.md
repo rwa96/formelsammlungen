@@ -1,4 +1,8 @@
 # Persönlichkeitsrecht
+*   Schutz des Individuums (keine unbegrenzte Erhebung, Entfaltung der Persönlichkeit)
+*   Schutz der Freiheit (aus eigener Selbstbestimmung planen und entscheiden)
+*   Basis für soziales Interagieren (nicht schrankenlos -> Gesetzgrundlage)
+*   Bedingugn für Demokratie (Teilnahme an versammlungen)
 
 # Personenbezogene Daten
 *   bestimmte Person: direkt identifizierbar
@@ -37,12 +41,12 @@
 # Telemedien Dienst
 Plattformen mittels derer Inhalte angebonten werden
 
-### Nutzungsdaten
+## Nutzungsdaten
 *   Identifikation
 *   Zeitangaben der Nutzung
 *   in Anspruch genommene Inhalte
 
-### Zweck
+## Zweck
 *   Werbung
 *   Marktforschung
 *   Gestaltung
@@ -157,9 +161,6 @@ Plattformen mittels derer Inhalte angebonten werden
     *   wenn keine __schutzwürdigen Interessen__
     *   nicht bei bloßen Anfragen
 
-## Übermittlung
-__konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
-
 ## Scoring
 *   für Entscheidung des Vertragsverhältnisses
 *   Wissenschaftlich anerkannt
@@ -228,5 +229,9 @@ __konkretes__, __glaubhaftes__ und __berechtigtes__ Interesse
 *   freiwillige Angaben zu pers. bez. Daten
 
 # Cookie
-*   Wenn technisch erforderlich
-*   E-Privacy Richtlinie fordert __Opt Out__
+*   direkt identifizierend
+    *   zur erbringung d. Dienstes erforderlich (z.B. Steuerung/Verbindung)
+*   Pseudonym
+    *   Cookie-ID
+    *   Hinweis auf Wiederspruchsrecht
+    *   keine Zusammenführung von Nutzungs -und Identitätsdaten
