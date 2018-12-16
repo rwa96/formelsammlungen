@@ -1,0 +1,25 @@
+\section{Rekursion}
+
+\subsection{Primitive Rekursion}
+Kann in endlichen Schritten gelöst werden: \\
+\textbf{if, for, listen, etc...}
+
+\subsection{Allgemeine Rekursion}
+Nicht ohne Fixpunktoperator möglich
+
+\subsubsection{Fixpunktoperator (Y-Combinator)}
+\begin{itemize}
+    \item \textbf{Fixpunkt:} f = \lambda x.if (< x 2) 1 (+ (f (- x 1)) (f (- x 2)))
+    \item \textbf{Rekursion:} F = \lambda fx.if (< x 2) 1 (+ (f (- x 1)) (f (- x 2)))
+    \item f = F f \textit{(f ist ein Fixpunkt von F)}
+\end{itemize}
+
+Für ein beliebiges \textbf{F} ist \textbf{YF} ein Fixpunkt:
+Y = \lambda g.(\lambda x.g(xx)) (\lambda x.g(xx))
+
+\begin{enumerate}
+    \item YF = \lambda (g.(\lambda x.g(xx))(\lambda x.g(xx))) F
+    \item (\lambda x.F(xx))(\lambda x.F(xx))
+    \item F((\lambda x.F(xx)) (\lambda x.F(xx)))
+    \item F((\lambda g.(\lambda x.g(xx)) (\lambda x.g(xx))) F)
+\end{enumerate}

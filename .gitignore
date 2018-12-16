@@ -6,6 +6,8 @@
 
 *.out
 
+*.pdf
+
 *.snm
 
 *.gz
