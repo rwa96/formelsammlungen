@@ -1,0 +1,9 @@
+Beschreiben Sie detailliert den Ablauf einer Interrupt-Bearbeitung
+	
+	-> Interrupt flag wird gesetzt
+	-> Nach aktuellem Befehl wird unterbrochen (BS übernimmt Kontrolle)
+	-> Prozess-Daten werden gespeichert (wie bei Kontextswitch)
+	-> Mittels Interrupt-Vector wird die entsprechende ISR aufgerufen
+	-> Diese ist nicht unterbrechbar und so kurz wie möglich
+	-> Die ISR ruft dann ein sog. Tasklet auf welches unterbrechbar ist und die eigentliche Arbeit macht
+

@@ -1,0 +1,47 @@
+(robin)[~] ./signal_handler &
+[1] 3042
+(robin)[~] kill -10 3042
+Signal SIGUSR1 received!
+(robin)[~] kill -12 3042
+Signal SIGUSR2 received!
+
+1. was geschieht, wenn Sie Ihrem Programm
+ 
+ 	a) ein Signal mehrfach schicken ?
+
+		Der hinterlegte Signalhandler wird mehrfach ausgeführt
+		(Signale werden bis zur behandlung in einer queue gespeichert)
+
+ 	b) ein Signal ohne hinterlegten Handler schicken ?
+		
+ 		Falls keine expliziten Handler definiert sind, verhaelt sich das programm den Standarts entsprechend:
+                - Anhalten (nicht beenden) des laufenden Programms.
+		- Fortsetzen des zuvor angehaltenen Programmes
+		- Beenden des Programms ohne einen Speicherauszug
+		- Beenden des Programms mit Schreiben eines Speicherauszugs.
+		- Ignorieren des Signals.
+
+2. Welche Informationen können Sie in Signalen an ihr Programm transportieren?
+
+	Signale koennen keine zusaetzlichen Informationen transportieren. 
+        Die Signalnummer selbst dient hier als Information. Signale werden fuer verschiedene Zwecke verwendet:
+	- Um Prozesse anzuhalten oder zu terminieren
+	- Um Interrupts auf Prozessebene sichtbar zu machen: z.B. I/O-Interrupt
+	- Um Statusaenderungen bekannt zu machen z.B. SIGCHLD
+	- Falls ein Fehler auftritt
+
+
+3. können Sie Ihrem Programm auch von einem anderen Rechner aus ein Signal schicken?
+	
+	Über eine secure shell (ssh) kann auch von einem anderen Rechner ein Signal geschicket werden.
+
+
+4. wie können Sie auch für Signale ohne expliziten Signal-Handler folgende Reaktion erzeugen:
+	
+	a) Signal ignorieren?
+
+		Mit der Flag SIG_IGN können signale ignoriert werden. (Davon ausgeschlossen sind SIG_INT und SIG_TERM)
+
+	b) ein Default-Verhalten, wenn sonst kein Handler hinterlegt ist
+
+		Wenn nicht explizit ein Signalhandler definiert wurde, tritt immer das Defaultverhalten ein.

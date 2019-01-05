@@ -6,6 +6,8 @@
 
 *.out
 
+*.pdf
+
 *.snm
 
 *.gz
@@ -23,3 +25,5 @@
 *.fdb_latexmk
 
 *.fls
+
+*_temp.tex

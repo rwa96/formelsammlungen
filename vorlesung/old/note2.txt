@@ -1,0 +1,6 @@
+Kernelmode
+	Schutz der Prozesse voneinander (Stabilität)
+	Sicherheit
+
+ULT (User Level Thread)
+KLT (Kernel Level Thread)

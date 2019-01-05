@@ -1,0 +1,8 @@
+Was beobachten Sie?
+	Die globale Variable hat zuf√llige Werte obwohl am Ende aller Rechenoperationen aller Threads 0 gespeichert sein sollte.
+
+Warum?
+	Das Inkrement/Dekrement einer Variable ist keine atomare operation. 
+	Zuerst muss der aktuelle Wert aus dem Hauptspeicher geladen werden um die Rechenoperation durchzuf√hren.
+	Dadurch kann es zu sog. Raceconditions kommen in denen beispielsweise ein Thread ein (zu) altes Ergebnis
+	der Variable zur√ck schreibt weil er durch Kontextwechsel zu lange im Hintergrund gewartet hat.

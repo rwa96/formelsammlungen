@@ -1,0 +1,29 @@
+\section{\lambda -Term Auswertung}
+
+\subsection{Beispiele: Umgebung}
+\begin{itemize}
+    \item $(\lambda x.t) s \downarrow \phi$
+    \begin{itemize}
+        \item $s \downarrow \phi$
+        \item $t \downarrow (s \leftarrow x) \circ \phi$
+        \item $x \downarrow \phi = x$ falls $x \notin dom(\phi)$
+    \end{itemize}
+
+    \item $(\lambda x.t) \downarrow \phi = \lambda x.(t \downarrow \phi)$
+    falls $x \notin \phi(y)$ für alle $y \in dom(y)$.
+
+    \item $\lambda mnfx.mf(nfx)$ und $1 = \lambda gy.gy$
+    \begin{enumerate}
+        \item $((+ 1) 1) \downarrow \varepsilon$
+        \item $1 \downarrow \varepsilon \rightarrow \lambda g.(\lambda y.gy) \downarrow \varepsilon$
+        \item $\lambda g.(\lambda y.gy) \downarrow \varepsilon$
+        \item $\lambda g.((\lambda y.gy) \downarrow \varepsilon)$
+        \item $\lambda g.\lambda y.(gy \downarrow \varepsilon) = \lambda g.\lambda y.(g \downarrow \varepsilon)(y \downarrow \varepsilon) = 1$
+        \item $(+ 1) \downarrow \varepsilon$
+        \item $\lambda m.(\lambda nfx.mf(nfx)) 1 \downarrow \varepsilon$
+        \item $\lambda nfx.(mf(nfx) \downarrow [1\leftarrow m] \circ \varepsilon)$
+        \item $\lambda nfx.(m \downarrow [1\leftarrow m] \circ \varepsilon) f(nfx)$
+        \item $\lambda nfx.1f(nfx)$
+        \item $(+ 1) 1 \downarrow \varepsilon$
+    \end{enumerate}
+\end{itemize}

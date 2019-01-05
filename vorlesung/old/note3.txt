@@ -1,0 +1,4 @@
+- Thread Debugger:
+	valgrind [--tool=drd, massif, helgrindö]
+	purify
+	drmemory

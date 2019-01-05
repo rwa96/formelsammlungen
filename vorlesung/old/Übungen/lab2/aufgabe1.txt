@@ -1,0 +1,10 @@
+- fork
+	Startet einen Kindprozess und gibt seine nummer zurück (error = -1, parent = 0, erstes kind = 1 ...)
+- execl
+	Startet eine ausführbare Datei im aktuellen Prozess (Prozessimage wird überschrieben) und übergibt einzeln definierte Argumente an diesen.
+- waitpid
+	Wartet darauf, dass der Kindprozess mit entsprechender id terminiert (error = -1, kind terminiert = kind_id)
+- clone
+	Startet einen Kindprozess, der sich die Resourcen mit dem Parent teilen kann (anders als fork wird hier eine funktion ausgeführt)
+- system
+	Startet einen Kindprozess mit dem Kommando "execl("/bin/sh", "sh", "-c", command, (char *) 0)"
