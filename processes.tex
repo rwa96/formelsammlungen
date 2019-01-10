@@ -25,6 +25,18 @@
 \subsection{Hierarchie und Signale}
 Jeder Prozess hat \textbf{Vaterprozess} \textit{(Prozesse erzeugen einander)}.
 
+\subsubsection{Fork}
+\begin{lstlisting}
+    int pid = fork();
+    if(pid == 0){
+        printf("Ich bin das Kind mit pid=%d\n", getpid());
+    }else if(pid > 0){
+        printf("Ich bin der Vater, mein Kind hat die pid=%d\n", pid);
+    }else{
+        printf("Error: fork() war nicht erfolgreich");
+    }
+\end{lstlisting}
+
 \subsubsection{Signale}
 \begin{itemize}
     \item (17) STOP \textit{(Strg-Z oder bg)}
