@@ -1,0 +1,21 @@
+\section{Synchronisation}
+
+\subsection{Race Condition}
+mehrere parallele Threads/Prozesse nutzen \textbf{gemeinsame Resource}.\\
+Zustand hängt von Ausführung ab:\\
+$\Rightarrow$ \textbf{nicht vorhersagbar, nicht reproduzierbar}
+
+\subsection{Synchronisationsmechanismen}
+\begin{itemize}
+    \item Mutex
+    \item Semaphor
+    \item Event(-Queue)
+    \item Monitor
+    \item Locking
+\end{itemize}
+
+\subsection{Anforderungen}
+\begin{itemize}
+    \item kein Deadlock (blockiert außerhalb v. kritischem Bereich)
+    \item Starvation free (Scheduling bei mehreren Wartenden)
+\end{itemize}
