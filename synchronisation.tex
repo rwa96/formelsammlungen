@@ -9,13 +9,48 @@ $\Rightarrow$ \textbf{nicht vorhersagbar, nicht reproduzierbar}
 \begin{itemize}
     \item Mutex
     \item Semaphor
-    \item Event(-Queue)
-    \item Monitor
+    \begin{itemize}
+        \item negativ Werte: immer um 1 erhöhen und erniedrigen
+    \end{itemize}
+    \item Event (wie Condition Variable)
+    \begin{itemize}
+        \item automatisch: ein Thread kehrt zurück -> reset
+        \item manuell: alle Threads kehren zurück
+    \end{itemize}
+    \item Monitor (Klasse bei der Jede public Methode Synchronisiert ist)
     \item Locking
+    \begin{itemize}
+        \item Concurrent Read
+        \item Concurrent Write
+        \item Protected Read
+        \item Protected Write
+        \item Exclusive
+    \end{itemize}
+\end{itemize}
+
+\subsection{Spin-Locks}
+\begin{itemize}
+    \item Prozess/Thread geht nicht in blockiert Zustand:\\
+    $\Rightarrow$ in Interrupt Handlern Verwendbar
+    \item nicht rekursiv
+    \item nur bei kurzen wartezeiten    
 \end{itemize}
 
 \subsection{Anforderungen}
 \begin{itemize}
     \item kein Deadlock (blockiert außerhalb v. kritischem Bereich)
     \item Starvation free (Scheduling bei mehreren Wartenden)
+\end{itemize}
+
+\subsection{Praxis (Linux)}
+\begin{itemize}
+    \item Atomare:
+    \begin{itemize}
+        \item Integer-Variablen
+        \item Bit-Operationen
+    \end{itemize}
+    \item Spin-Locks
+    \item Reader-Writer-Locks
+    \item Semaphore/R-W-Semaphore
+    \item Mutexe
 \end{itemize}

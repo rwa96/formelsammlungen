@@ -1,0 +1,60 @@
+\section{Interprozesskommunikation IPC}
+
+\subsection{Charakteristika}
+\begin{itemize}
+    \item Kommunikationsmodell
+    \begin{itemize}
+        \item P2P
+        \item publish-subscribe
+        \item broadcast
+    \end{itemize}
+    \item Übertragungsrichtung
+    \begin{itemize}
+        \item simblex
+        \item duplex
+    \end{itemize}
+    \item Synchronität
+    \begin{itemize}
+        \item synchron/blockierend
+        \item asynchron/nicht-blockierend (nachrichtenbasiert)
+    \end{itemize}
+\end{itemize}
+
+\subsection{Basismechanismen (Linux)}
+\begin{itemize}
+    \item Signale
+    \item Synchronisation (prozessübergreifend)
+    \begin{itemize}
+        \item shared mutex
+        \item shared semaphore
+    \end{itemize}
+    \item Pipes (unix)
+    \begin{itemize}
+        \item FIFO Bytestream
+        \item unidirektional
+        \item Synchron
+    \end{itemize}
+    \item Sockets
+    \begin{itemize}
+        \item Verbindungslos UDP
+        \item Verbindungsorientiert TCP
+    \end{itemize}
+    \item Shared-Memory
+\end{itemize}
+
+\subsection{Middleware-Lösungen}
+\begin{itemize}
+    \item Synchron
+    \begin{itemize}
+        \item RPC
+        \item RMI (Java)
+        \item CORBA
+        \item DBus Messaging (~RPC)
+    \end{itemize}
+    \item Asynchron
+    \begin{itemize}
+        \item SmartSockets
+        \item MqSeries Messaging
+        \item JMS
+    \end{itemize}
+\end{itemize}
