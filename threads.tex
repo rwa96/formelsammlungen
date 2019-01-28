@@ -1,6 +1,25 @@
 \section{Threads}
+\begin{itemize}
+    \item Aktivitätsstrang in einem Prozess
+    \item gemeinsamer Zugriff auf Daten
+\end{itemize}
 
-\subsection{Unterschied: Prozesse/Threads}
+\subsection{Vergleich: Prozesse/Threads}
+
+\subsubsection{Gemeinsam mit Prozess:}
+\begin{itemize}
+    \item Adressraum
+    \item Programmcode
+    \item aktuelle Daten (Variablen/Konstanten)
+\end{itemize}
+
+\subsubsection{Separat pro Thread}
+\begin{itemize}
+    \item PC
+    \item SP
+    \item Stack
+    \item Register
+\end{itemize}
 
 \begin{figure}[ht!]
     \includegraphics[width=\linewidth]{pics/processes_vs_threads}

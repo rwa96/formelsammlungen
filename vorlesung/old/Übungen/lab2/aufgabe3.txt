@@ -1,6 +1,0 @@
-Warum gibt es die Zustandsübergänge
-blockiert -> laufend und
-bereit -> blockiert
-nicht?
-
-Der 

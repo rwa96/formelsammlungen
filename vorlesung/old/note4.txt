@@ -1,4 +1,0 @@
-Pageloading
-	1) Page ist im TLB
-	2) Page wird von MMU berechnet
-	3) Page wird von MMU berechnet und geladen

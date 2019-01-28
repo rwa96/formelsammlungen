@@ -42,6 +42,34 @@ $\Rightarrow$ \textbf{nicht vorhersagbar, nicht reproduzierbar}
     \item Starvation free (Scheduling bei mehreren Wartenden)
 \end{itemize}
 
+\subsection{Deadlocks}
+Ein Zustand in dem Jeder Teilnehmer auf einen Anderen wartet (Alle warten gegenseitig aufeinander).
+
+\subsubsection{Vorraussetzungen}
+\begin{itemize}
+    \item Mutual Exclusion (mindestens eine Resource nur exklusiv verfügbar)
+    \item Hold and Wait (hat resource, wartet auf andere resource)
+    \item No preemption (resource kann nur von Prozess abgegeben werden)
+    \item Circular Wait (Geschlossener kreis beim Warten auf Resourcen)
+\end{itemize}
+
+\subsection{Bakner's Algorithm}
+\begin{itemize}
+    \item geg: Allocation (Prozess <-> Resource), Max, Available
+    \item Algorithmus:
+    \begin{enumerate}
+        \item Need = Max - Allocation
+        \item While unscheduled Processes exist
+        \begin{enumerate}
+            \item Select unscheduled Process
+            \item If Need <= Available
+            \begin{itemize}
+                \item Available + Allocation = Available
+            \end{itemize}
+        \end{enumerate}
+    \end{enumerate}
+\end{itemize}
+
 \subsection{Praxis (Linux)}
 \begin{itemize}
     \item Atomare:
@@ -54,3 +82,12 @@ $\Rightarrow$ \textbf{nicht vorhersagbar, nicht reproduzierbar}
     \item Semaphore/R-W-Semaphore
     \item Mutexe
 \end{itemize}
+
+\subsection{Linux-Kernel: Semaphore}
+\begin{lstlisting}
+    sema_init(&sem, count);
+    init_MUTEX(&sem);
+    down(&sem)
+        /* kritischer Bereich */
+    up(&sem);
+\end{lstlisting}

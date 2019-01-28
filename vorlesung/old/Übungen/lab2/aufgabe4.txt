@@ -1,8 +1,0 @@
-"_thread.start_new_thread"
-	erzeugt und startet einen neuen Thread der genau wie bei "pthread_create" durch
-	eine Funktion repräsentiert wird.
-	Die Funktion kann außerdem Parameter an den Thread in Form einel Tupels übergeben.
-
-In der "_thread" Bibliothek gibt es kein Equivalent zu "pthread_join".
-	Um diese Funktionalität zu erhalten muss die (Java-ähnliche) Bibliothek "threading"
-	verwendet werden. Hier besitzen Threadobjekte eine Join-Methode.

@@ -18,8 +18,16 @@ Scheduling: Zuteilug der CPU (Betriebsmittel) an Threads/Prozesse
     \item Batch
     \begin{itemize}
         \item FCFS
-        \item SJF
-        \item SRF
+        \begin{itemize}
+            \item nicht Präemptiv
+            \item minimiert durchschnittliche Verweilzeit
+            \item I/O ineffizient
+        \end{itemize}
+        \item SJF und SRT
+        \begin{itemize}
+            \item minimiert Wartezeit
+            \item starvation
+        \end{itemize}
         \item Prioritäten
     \end{itemize}
 \end{itemize}
@@ -42,6 +50,13 @@ Scheduling: Zuteilug der CPU (Betriebsmittel) an Threads/Prozesse
     \item Fairness (keine starvation)
     \item Prioritäten
     \item Resourcen Fairness
+\end{itemize}
+
+\subsubsection{Wahl des Quantums}
+\begin{itemize}
+    \item zu groß: Latency
+    \item zu klein: Overhead durch Kontextwechsel
+    \item typisch: 10-100ms
 \end{itemize}
 
 \subsection{Round Robin und I/O}
@@ -68,4 +83,10 @@ Scheduling: Zuteilug der CPU (Betriebsmittel) an Threads/Prozesse
 \begin{itemize}
     \item $S_{n+1} = \frac{1}{n} \sum_{i=1}^n T_i = \frac{1}{n} T_n + \frac{n-1}{n} S_n$
     \item $S_{n+1} = \alpha T_n + (1-\alpha) S_n; \alpha \in [0,1]$
+\end{itemize}
+
+\subsection{Linux Prioritäten: nice}
+\begin{itemize}
+    \item nice, renice
+    \item NeuePrio = Basis-Prio + CPU-Nutzung/2 + nice-value
 \end{itemize}

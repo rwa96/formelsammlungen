@@ -44,3 +44,14 @@ Jeder Prozess hat \textbf{Vaterprozess} \textit{(Prozesse erzeugen einander)}.
     \item (15) SIGTERM \textit{(beenden)}
     \item (9) KILL \textit{(abschließen)}
 \end{itemize}
+
+\subsection{Prozesserzeugung}
+\begin{enumerate}
+    \item fork $\rightarrow$ clone $\rightarrow$ do\_fork $\rightarrow$ copy\_process
+    \item neue thread\_info in task\_struct
+    \item Kind-Status auf TASK\_UNINTERRUPTABLE
+    \item copy\_flags
+    \item get\_pid: neue PID für Kind
+    \item je nach clone-Parametern: kopieren/gemeinsam nutzen
+    \item Scheduler
+\end{enumerate}

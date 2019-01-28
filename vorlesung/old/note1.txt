@@ -1,4 +1,0 @@
-Betriebssysteme 1
-
-Homepage: http://schoerr.userweb.mwn.de/Vorslesungen
-(python)
